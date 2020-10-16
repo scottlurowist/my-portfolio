@@ -7,25 +7,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-import React from 'react';
-import App from '../App';
-
-import { shallow } from 'enzyme'
 
 
+describe('', () => {
 
+  test('', () => {
 
-describe('foo', () => {
-
-  test('sss', () => {
-
-    // ARRANGE
-    const expectedText = 'HELLO WORLD!'
-
-    // ACT
-    const actualText = shallow(<App />).text();
-
-    // ASSERT
-    expect(actualText).toBe(expectedText);
   })
 });
