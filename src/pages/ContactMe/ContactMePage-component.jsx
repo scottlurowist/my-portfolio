@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// ContactMePage.jsx
+//
+// This component renders the contact me page for the portfolio app.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+import React from 'react';
+
+
+
+
+const ContactMePage = () => {
+
+    return (<h2>Contact Me - this is a temp placeholder</h2>);
+};
+
+
+export default ContactMePage;

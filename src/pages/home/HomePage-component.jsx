@@ -55,7 +55,7 @@ class HomePage extends React.Component {
                         <h4>
                             I started my career as an electrical engineer. I soon realized that 
                             hardware is the flesh and bones of a machine, but software is the personality
-                            and soul. So I earned a Master Degree in Computer Science. At that time
+                            and soul; that appealed to me. So I earned a Master Degree in Computer Science. At that time
                             I wanted to be a systems developer, writing low-level code and merging my
                             EE and CS personalities.
                         </h4>
