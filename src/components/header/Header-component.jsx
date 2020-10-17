@@ -30,7 +30,11 @@ const Header = () => {
                 <h3 className='brand'>Scott Lurowist</h3>
             </div>
             <div className='follow-me'>
-                {/* <Link href='' className='social-link'>Portfolio</Link> */}
+                <Link to='/' className='social-link'>Home</Link>
+                <span>|</span>
+                <Link to='/portfolio' className='social-link'>Portfolio</Link>
+                <span>|</span>
+                <Link to='/contact' className='social-link'>Contact Me</Link>                
                 <span>|</span>
                 <a href='https://github.com/scottlurowist' className='social-link'>
                     <img src={GithubImage} alt='GitHub'
