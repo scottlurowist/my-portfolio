@@ -9,6 +9,10 @@
 
 import React from 'react';
 
+import TypingText from './../../components/typing-text/TypingText-component';
+
+import './Homepage-component.scss';
+
 
 
 
@@ -17,11 +21,13 @@ class HomePage extends React.Component {
     constructor() {
         super();
 
-        this.textToRender = 
-            "Hello. My name is Scott Lurowist and I recently reimagined my career as a fullstack software developer."
         this.state = {
-            renderedText: ''
+
         };
+
+        this.textToRender = 
+            "Hello. My name is Scott Lurowist and I recently reimagined my " +
+            "career as a fullstack software developer."
     }
 
     typeText = () => {
@@ -32,14 +38,19 @@ class HomePage extends React.Component {
         }, 100);    
     };
 
-    componentDidMount() {
-        this.typeText();
-    }
 
     render() {
         
         return (
-            <span>{this.state.renderedText.toString()}</span>
+            <div className="homepage-container">
+                <div>
+                    <h3>
+                        <TypingText textToRender={this.textToRender}
+                                    renderSpeed={40} />
+                    </h3>   
+                </div>
+             
+            </div>
         );
     }
 }
