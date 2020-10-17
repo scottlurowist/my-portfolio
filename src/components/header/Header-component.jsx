@@ -48,7 +48,7 @@ const Header = () => {
                 </a>
                 <a href='https://medium.com/@scottlurowist' className='social-link'>
                     <img src={MediumImage} alt='GitHub'
-                        title='Follow me on LinkedIn'
+                        title='Follow me on Medium'
                         width='40' height='40'/>
                 </a>                
             </div>
