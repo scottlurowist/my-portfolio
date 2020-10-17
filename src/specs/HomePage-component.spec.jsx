@@ -19,7 +19,7 @@ describe('The HomePage component', () => {
 
   test('must render without crashing or throwing an exeption.', () => {
 
-    // ARRANGE & ACT & ASSERT
-    shallow(<HomePage />);
+      // ARRANGE & ACT & ASSERT
+      shallow(<HomePage />);
   })
 });
