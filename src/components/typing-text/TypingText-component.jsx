@@ -35,14 +35,21 @@ class TypingText extends React.Component {
         const textArray = this.textToRender.split('');
 
         setInterval(() => {
+            // This is not the right way to do it. I should be using:
+            // this.setState((prevState) => {...}) but it does not work.
+            // It scrambles the text that it renders. Perhaps because the 
+            // render speed is so quick? Regardless, this works.
             this.setState({renderedText: this.state.renderedText + textArray.splice(0, 1)});
 
+            // Invoke the callbaclk to let the parent component know that the text
+            // rendering has completed.
             if (textArray.length === 0) {
                 this.finishedCallback();
             }
             
         }, this.renderSpeed);    
     };
+
     
     
     componentDidMount() {
