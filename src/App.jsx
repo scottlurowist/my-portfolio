@@ -10,8 +10,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import HomePage from './pages/home/HomePage-component';
 import Header from './components/header/Header-component';
+import HomePage from './pages/home/HomePage-component';
+
 
 import './App.scss';
 
@@ -24,7 +25,7 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Route exact path='/' component={HomePage}></Route>
+        <Route path='/' component={ HomePage }></Route>
       </Switch>
     </div>
   );
