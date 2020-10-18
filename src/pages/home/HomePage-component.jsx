@@ -50,36 +50,37 @@ class HomePage extends React.Component {
                                     renderSpeed={50}
                                     finishedCallback={this.finishedCallback} />
                     </h2 >
-                    <div hidden={!this.state.introRendered}>
+                    <div hidden={!this.state.introRendered} className='scott-story'>
                         <hr  />
                         <h4>
-                            I started my career as an electrical engineer and an avionics specialist
+                            I started my career as an electrical engineer and an avionics systems specialist
                             in the Air National Guard. I soon realized that hardware is the flesh and
                             bones of a machine, but software is the personality and soul; that appealed
                             to me. So I earned a Master Degree in Computer Science. At that time I wanted 
                             to be a systems developer, writing low-level code, compilers, and operating
-                            systems, EE and CS personalities.
+                            systems, combining my EE and comp sci personalities.
                         </h4>
                         <h4>
-                            I started my software career at IBM doing a lot of C, C++, Fortran, MPI, and even 
-                            AIX assembler, working in their Power Parallel lab testing software used to test
-                            our national nuclear arsenal.
+                            I started my software career at IBM doing business apps, then a grad school
+                            instructor recruited me to the Power Parallel lab. I wrote a lot of C, C++,
+                            Fortran, MPI, and even AIX assembler code for software used by our National
+                            Laboratories to simulate detonations of our national nuclear arsenal.
                         </h4>
                         <h4>
                             I reimagined my career a second time when I attended a 3-month Microsoft .NET
-                            bootcamp. And I spent many years in that world building WinForms, WPF, and
+                            bootcamp. And I spent years in that world building WinForms, WPF, and
                             ASP.NET apps. But the tech world was changing around me and my company McKesson
-                            was using a legacy tech stack. So were my thoughts about life changing and what
+                            was using a legacy tech stack. And so were my thoughts about life changing and what
                             I wanted to do.
                         </h4>  
                         <h4>
                             So, I reimagined my career a third time when I took advantage of the Covid-19 situation
-                            and attended General Assembly's 3-month fullstack bootcamp, in which we focused on
-                            the MERN stack. 
+                            and attended General Assembly's 3-month virtual fullstack bootcamp, in which we focused on
+                            the MERN stack as well as Python.
                         </h4>  
                         <h4>
                             My happiest moment in my career was when I volunteered and worked with Panthera
-                            to develop a server that listens for "poacher cam" request and used AWS to send
+                            to develop a server that listens for "poacher cam" requests and used AWS to send
                             poacher images and emails to park rangers in real-time. We caught a lot of poachers!
                         </h4>
                         <h4>
