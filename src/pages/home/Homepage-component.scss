@@ -5,5 +5,15 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0 auto;
-    width: 60%
+    width: 90%
+}
+
+.scott-story {
+    font-family: 'Kalam', cursive;
+}
+
+@media only screen and (min-width: 750px) {
+    .homepage-container {
+        width: 70%;
+    }
 }
