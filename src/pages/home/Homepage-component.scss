@@ -10,10 +10,15 @@
 
 .scott-story {
     font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 750px) {
     .homepage-container {
-        width: 70%;
+        width: 60%;
+    }
+
+    .scott-story {
+        font-size: 1.5rem;
     }
 }

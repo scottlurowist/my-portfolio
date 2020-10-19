@@ -56,7 +56,7 @@ class HomePage extends React.Component {
                             I started my career as an electrical engineer and an avionics systems specialist
                             in the Air National Guard. I soon realized that hardware is the flesh and
                             bones of a machine, but software is the personality and soul; that appealed
-                            to me. So I earned a Master Degree in Computer Science. At that time I wanted 
+                            to me. So I earned a Master's Degree in Computer Science. At that time I wanted 
                             to be a systems developer, writing low-level code, compilers, and operating
                             systems, combining my EE and comp sci personalities.
                         </h4>
