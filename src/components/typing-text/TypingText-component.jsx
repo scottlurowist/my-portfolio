@@ -21,17 +21,26 @@ class TypingText extends React.Component {
     constructor(props) {
         super(props);
 
-        this.textToRender = this.props.textToRender;
-        this.renderSpeed = this.props.renderSpeed;
-        this.finishedCallback = this.props.finishedCallback;
+        this.textToRender = props.textToRender;
+        this.renderSpeed = props.renderSpeed;
+        this.finishedCallback = props.finishedCallback;
             
         this.state = {
-            renderedText: ''
+            renderedText: '',
+            suppressTyping: props.suppressTyping
         };
     };
 
 
     typeText = () => {
+        // This suppresses the typing of the text if the parent doesn't want it.
+        if (this.state.suppressTyping) {
+            this.setState({ renderedText: this.props.textToRender})
+            this.finishedCallback();
+            
+            return;
+        } 
+
         const textArray = this.textToRender.split('');
 
         setInterval(() => {
@@ -59,7 +68,7 @@ class TypingText extends React.Component {
 
     render() {
         return (
-          <Fragment>{this.state.renderedText.toString()}</Fragment>  
+          <Fragment>{ this.state.renderedText.toString() }</Fragment>  
         );
     };
 };
