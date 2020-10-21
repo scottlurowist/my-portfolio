@@ -27,6 +27,7 @@ function App() {
       <header>
         <Navbar />
       </header>  
+      <div className='navbar-buffer'></div>
       <div>
       <Switch>
         <Route exact path='/' component={ HomePage }></Route>
