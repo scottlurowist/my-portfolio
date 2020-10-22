@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.b5f3c310.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.70669a2e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.70669a2e.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
+    "static/js/2.681462ec.chunk.js": "/my-portfolio/static/js/2.681462ec.chunk.js",
+    "static/js/2.681462ec.chunk.js.map": "/my-portfolio/static/js/2.681462ec.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.aaa0d2f726eb8da264435dad63fb5d3e.js": "/my-portfolio/precache-manifest.aaa0d2f726eb8da264435dad63fb5d3e.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/main.b5f3c310.chunk.css.map": "/my-portfolio/static/css/main.b5f3c310.chunk.css.map",
+    "static/js/2.681462ec.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.681462ec.chunk.js.LICENSE.txt",
+    "static/media/800px-HTML5_logo_and_wordmark.svg.png": "/my-portfolio/static/media/800px-HTML5_logo_and_wordmark.svg.40562350.png",
+    "static/media/Sass-01.54d4c686.png": "/my-portfolio/static/media/Sass-01.54d4c686.54d4c686.png",
+    "static/media/css3.png": "/my-portfolio/static/media/css3.6b19ab42.png",
+    "static/media/mongodb-logo.png": "/my-portfolio/static/media/mongodb-logo.f04e4715.png",
+    "static/media/nodejs-logo.png": "/my-portfolio/static/media/nodejs-logo.88855eb6.png",
+    "static/media/python-logo@2x.png": "/my-portfolio/static/media/python-logo@2x.6501c7a6.png",
+    "static/media/react-logo-png-transparent.png": "/my-portfolio/static/media/react-logo-png-transparent.13368578.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b00eace.js",
+    "static/js/2.681462ec.chunk.js",
+    "static/css/main.b5f3c310.chunk.css",
+    "static/js/main.70669a2e.chunk.js"
+  ]
+}
