@@ -32,11 +32,9 @@ const Navbar = () => {
             <div className='follow-me'>
                 <div className='local-links'>
                     <Link to='/' className='social-link'>Home</Link>
-                    {/* <span>-</span> */}
                     <Link to='/portfolio' className='social-link'>Portfolio</Link>
-                    {/* <span>|</span> */}
-                    <Link to='/contact' className='social-link'>Contact Me</Link>                
-                    {/* <span>|</span> */}
+                    <Link to='/skills' className='social-link'>Skills</Link>  
+                    <Link to='/about-contact' className='social-link'>About/Contact</Link>                
                 </div>
                 <div className='social-links'>
                     <a href='https://github.com/scottlurowist' className='social-link'>
@@ -55,7 +53,6 @@ const Navbar = () => {
                             width='40' height='40'/>
                     </a> 
                 </div>
-               
             </div>
         </nav>
     )

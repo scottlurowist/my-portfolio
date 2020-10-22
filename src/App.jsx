@@ -13,9 +13,11 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar-component';
 import HomePage from './pages/home/HomePage-component';
 import PortfolioPage from './pages/Portfolio/PortfolioPage-component';
-import ContactMePage from './pages/ContactMe/ContactMePage-component';
+import SkillsPage from './pages/Skills/SkillsPage-component';
+import AboutContactMe from './pages/AboutContactMe/AboutContactMePage-component';
 
 import './App.scss';
+
 
 
 
@@ -32,7 +34,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={ HomePage }></Route>
         <Route path='/portfolio' component={ PortfolioPage }></Route> 
-        <Route path='/contact' component={ ContactMePage }></Route>                
+        <Route path='/about-contact' component={ AboutContactMe }></Route>  
+        <Route path='/skills' component={ SkillsPage }></Route>                               
       </Switch>
       </div>    
 
