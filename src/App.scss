@@ -1,3 +1,16 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// App.scss
+//
+// This component styles the App component for the portfolio app in a
+// mobile-first manner.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+@import './app-variables';
+
+
 
 
 .App {
@@ -18,7 +31,7 @@
   // This empirically matches the height of the navbar.
   height: 192px;
 
-  @media only screen and (min-width: 750px) {
+  @media only screen and (min-width: $non-mobile-min-width) {
     height: 76.8px;
   };
 }

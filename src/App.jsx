@@ -13,7 +13,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar-component';
 import HomePage from './pages/home/HomePage-component';
 import PortfolioPage from './pages/Portfolio/PortfolioPage-component';
-import SkillsPage from './pages/Skills/Skills-component';
+import SkillsPage from './pages/Skills/SkillsPage-component';
 import AboutContactMe from './pages/AboutContactMe/AboutContactMePage-component';
 
 import './App.scss';

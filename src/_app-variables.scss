@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _app-variables.scss
+//
+// This component defines application-wide variables for the portfolio app.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Sets the background, font, and navbar colors.
+$colors: (bground: #2c2c2c, 
+          font: whitesmoke,
+          navbar: black);
+
+// Use this font family anywhere handwritten fonts are used.          
+$handwritten-font-family: 'Kalam', cursive; 
+
+// This is the max-width breakpoint for mobile-first.
+$non-mobile-min-width: 750px;
