@@ -1,5 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// App.scss
+//
+// This component styles the App component for the portfolio app in a
+// mobile-first manner.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+@import './app-variables';
+
+
 
 
 .App {
   text-align: center;
+}
+
+// Fix this. This file should not know about navbar styling.
+.navbar-container {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+// This buffer exists for the fixed navbar, otherwise the top of our content
+// would it underneath the navbar. Now the top of our content sits just at the
+// bottom of oyr navbar.
+.navbar-buffer {
+  // This empirically matches the height of the navbar.
+  height: 192px;
+
+  @media only screen and (min-width: $non-mobile-min-width) {
+    height: 76.8px;
+  };
 }

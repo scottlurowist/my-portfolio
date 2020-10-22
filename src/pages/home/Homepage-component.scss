@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// HomePage-component.scss
+//
+// This component styles the HomePage component for the portfolio app in a
+// mobile-first manner.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+@import './../../app-variables';
+
+
+
+
+.homepage-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 90%
+}
+
+.scott-story {
+    font-family: $handwritten-font-family;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: $non-mobile-min-width) {
+    .homepage-container {
+        width: 60%;
+    }
+
+    .scott-story {
+        font-size: 1.5rem;
+    }
+}

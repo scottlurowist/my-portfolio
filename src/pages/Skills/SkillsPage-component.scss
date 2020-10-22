@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// SkillsPage-component.scss
+//
+// This component styles the SkillsPage component for the portfolio app in a
+// mobile-first manner.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+@import './../../app-variables';
+
+
+
+
+.skills-page-title {
+    text-align: center;
+}
+
+.skills-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: whitesmoke;
+    display: inline-block;
+    border: #2a2a2a solid 0px;
+    border-radius: 0.75rem;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    width: 90px;
+    height: 90px;
+
+    @media only screen and (min-width: $non-mobile-min-width) {
+        width:180px;
+        height: 180px;
+    }    
+}
+
+.skill-card-nodejs {
+    @extend .skill-card;    
+    width: 135px;
+    @media only screen and (min-width: $non-mobile-min-width) {
+        width:270px;
+    }        
+}
+
+.skill-card-javascript {
+    @extend .skill-card;    
+    padding: 0px;
+}
+
+.skill-card-mongodb {
+    @extend .skill-card;    
+    background-color: white;
+    width: 180px;
+
+    @media only screen and (min-width: $non-mobile-min-width) {
+        width:360px;
+    }        
+}
+
+.skill-card-python {
+    @extend .skill-card;    
+    background-color: map-get($colors, bground);
+    width: 300px;
+
+    @media only screen and (min-width: $non-mobile-min-width) {
+        width:600px;
+    }    
+}
