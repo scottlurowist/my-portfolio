@@ -1,9 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-// HomePage-component.scss
+// AboutContactMePage-component.scss
 //
-// This component styles the HomePage component for the portfolio app in a
-// mobile-first manner.
+// This component styles the AboutContactMePage component for the portfolio
+// app in a mobile-first manner.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -13,21 +13,22 @@
 
 
 
-.homepage-container {
+.about-contact-me-container {
     margin: 0 auto;
     width: 90%
 }
 
-.scott-image {
-    border-radius: 1rem;
-    display: block;
-    height: 60%;
-    margin: 0 auto;
-    width: 60%;
+.scott-story {
+    font-family: $handwritten-font-family;
+    font-size: 1.2rem;
 }
 
 @media only screen and (min-width: $non-mobile-min-width) {
     .homepage-container {
         width: 60%;
+    }
+
+    .scott-story {
+        font-size: 1.5rem;
     }
 }

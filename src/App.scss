@@ -9,12 +9,16 @@
 
 
 @import './app-variables';
-
+@import '~bootstrap/scss/bootstrap';
 
 
 
 .App {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 // Fix this. This file should not know about navbar styling.
