@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de145bbfd1a9d1b7675916d450daafe7",
+    "revision": "86f348460cb0449297fe7cc36db6583d",
     "url": "/my-portfolio/index.html"
   },
   {
-    "revision": "352c4313617cde7b5a53",
-    "url": "/my-portfolio/static/css/main.b5f3c310.chunk.css"
+    "revision": "523a2e324c1b3f963ace",
+    "url": "/my-portfolio/static/css/main.b586e9e3.chunk.css"
   },
   {
-    "revision": "e141093cd0fcdc85dca5",
-    "url": "/my-portfolio/static/js/2.681462ec.chunk.js"
+    "revision": "8814d8fda93bc2f71c5b",
+    "url": "/my-portfolio/static/js/2.b75d0b11.chunk.js"
   },
   {
-    "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/my-portfolio/static/js/2.681462ec.chunk.js.LICENSE.txt"
+    "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
+    "url": "/my-portfolio/static/js/2.b75d0b11.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "352c4313617cde7b5a53",
-    "url": "/my-portfolio/static/js/main.70669a2e.chunk.js"
+    "revision": "523a2e324c1b3f963ace",
+    "url": "/my-portfolio/static/js/main.2e590b57.chunk.js"
   },
   {
     "revision": "f241adf7bba56ceeeb82",
@@ -28,8 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-portfolio/static/media/800px-HTML5_logo_and_wordmark.svg.40562350.png"
   },
   {
+    "revision": "6da6b1ad91ff9f7af83679d21093a327",
+    "url": "/my-portfolio/static/media/Instasham.6da6b1ad.PNG"
+  },
+  {
     "revision": "54d4c686dbd729b3fab40c4448bcaba9",
     "url": "/my-portfolio/static/media/Sass-01.54d4c686.54d4c686.png"
+  },
+  {
+    "revision": "12be17e6faeff658653bb2d842df7c39",
+    "url": "/my-portfolio/static/media/Scott_02.12be17e6.jpg"
   },
   {
     "revision": "6b19ab42d4444af9d9ede2fd586e37b9",
@@ -50,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "13368578740b7cfc459e54004312bc14",
     "url": "/my-portfolio/static/media/react-logo-png-transparent.13368578.png"
+  },
+  {
+    "revision": "cc3f212a6eb3776841796c6f9c282ecd",
+    "url": "/my-portfolio/static/media/russian-flashcards.cc3f212a.PNG"
   }
 ]);
