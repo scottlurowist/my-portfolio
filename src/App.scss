@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 // Fix this. This file should not know about navbar styling.
 .navbar-container {
   overflow: hidden;
