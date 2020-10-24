@@ -25,35 +25,47 @@ class HomePage extends React.Component {
         this.state = {
             // False until the typing text intro is rendered, and then set
             // to true.
-            introRendered: false
+            introRendered: false,
+            suppressTyping: false
         };
 
+        this.typingIsFinishedCallback = null;
         this.textToRender = 
             "Hello. My name is Scott Lurowist and I am a fullstack developer" +
-            " on the MERN stack.";
+            " on the MERN stack."
     }
 
-    finishedCallback = () => {
 
-        setInterval(() => {
-            this.setState({introRendered: true});
+    typingTextFinishedCallback = () => {
+
+        this.typingIsFinishedCallbackTimer = setTimeout(() => {
+            this.setState({ introRendered: true });
         }, 2000);
     };
 
 
+    componentWillUnmount() {
+        console.log('home unmounting')
+        this.setState({ suppressTyping: true });
+        clearTimeout(this.typingIsFinishedCallbackTimer);
+        this.typingTextFinishedCallback = null;
+    };
+
+
     render() {
-        
         return (
             <div className="homepage-container">
                 <div>
                     <h2 className='typing-text'>
                         <TypingText textToRender={this.textToRender}
                                     renderSpeed={50}
-                                    finishedCallback={this.finishedCallback} />
+                                    suppressTyping={this.state.suppressTyping}
+                                    finishedCallback= {this.typingTextFinishedCallback} />
                     </h2 >
                     <hr />
                 </div>
-                <div hidden={!this.state.introRendered} className='scott-image-container'>
+                <div hidden={!this.state.introRendered} 
+                     className='scott-image-container'>
                     <img src={ScottImage} alt='Scott Lurowist'
                          className='scott-image' />
                 </div>                   
