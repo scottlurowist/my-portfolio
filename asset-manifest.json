@@ -1,32 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.b586e9e3.chunk.css",
-    "main.js": "/static/js/main.2e590b57.chunk.js",
-    "main.js.map": "/static/js/main.2e590b57.chunk.js.map",
+    "main.css": "/static/css/main.2dca376c.chunk.css",
+    "main.js": "/static/js/main.2d704b95.chunk.js",
+    "main.js.map": "/static/js/main.2d704b95.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/js/2.b75d0b11.chunk.js": "/static/js/2.b75d0b11.chunk.js",
-    "static/js/2.b75d0b11.chunk.js.map": "/static/js/2.b75d0b11.chunk.js.map",
+    "static/js/2.99313b2d.chunk.js": "/static/js/2.99313b2d.chunk.js",
+    "static/js/2.99313b2d.chunk.js.map": "/static/js/2.99313b2d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5b9813631c1110ba4a3dbbfcfd674e2f.js": "/precache-manifest.5b9813631c1110ba4a3dbbfcfd674e2f.js",
+    "precache-manifest.e71a83a12bf83e95a0444dbb738d2527.js": "/precache-manifest.e71a83a12bf83e95a0444dbb738d2527.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b586e9e3.chunk.css.map": "/static/css/main.b586e9e3.chunk.css.map",
-    "static/js/2.b75d0b11.chunk.js.LICENSE.txt": "/static/js/2.b75d0b11.chunk.js.LICENSE.txt",
-    "static/media/800px-HTML5_logo_and_wordmark.svg.png": "/static/media/800px-HTML5_logo_and_wordmark.svg.40562350.png",
-    "static/media/Instasham.PNG": "/static/media/Instasham.6da6b1ad.PNG",
-    "static/media/Sass-01.54d4c686.png": "/static/media/Sass-01.54d4c686.54d4c686.png",
-    "static/media/Scott_02.jpg": "/static/media/Scott_02.12be17e6.jpg",
-    "static/media/css3.png": "/static/media/css3.6b19ab42.png",
-    "static/media/mongodb-logo.png": "/static/media/mongodb-logo.f04e4715.png",
-    "static/media/nodejs-logo.png": "/static/media/nodejs-logo.88855eb6.png",
-    "static/media/python-logo@2x.png": "/static/media/python-logo@2x.6501c7a6.png",
-    "static/media/react-logo-png-transparent.png": "/static/media/react-logo-png-transparent.13368578.png",
-    "static/media/russian-flashcards.PNG": "/static/media/russian-flashcards.cc3f212a.PNG"
+    "static/css/main.2dca376c.chunk.css.map": "/static/css/main.2dca376c.chunk.css.map",
+    "static/js/2.99313b2d.chunk.js.LICENSE.txt": "/static/js/2.99313b2d.chunk.js.LICENSE.txt",
+    "static/media/Scott_02.jpg": "/static/media/Scott_02.12be17e6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
-    "static/js/2.b75d0b11.chunk.js",
-    "static/css/main.b586e9e3.chunk.css",
-    "static/js/main.2e590b57.chunk.js"
+    "static/js/2.99313b2d.chunk.js",
+    "static/css/main.2dca376c.chunk.css",
+    "static/js/main.2d704b95.chunk.js"
   ]
 }
