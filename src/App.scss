@@ -1,3 +1,19 @@
+<<<<<<< Updated upstream
+=======
+////////////////////////////////////////////////////////////////////////////////
+//
+// App.scss
+//
+// This component styles the App component for the portfolio app in a
+// mobile-first manner.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+@import './app-variables';
+
+
+
 
 
 .App {
@@ -9,16 +25,39 @@
   overflow: hidden;
   position: fixed;
   width: 100%;
+
+a {
+  color: map-get($map: $colors, $key: orangeColor) !important;
+  text-decoration: none;
 }
 
-// This buffer exists for the fixed navbar, otherwise the top of our content
-// would it underneath the navbar. Now the top of our content sits just at the
-// bottom of oyr navbar.
-.navbar-buffer {
-  // This empirically matches the height of the navbar.
-  height: 192px;
+.brand__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+  img {
+    border: 2px solid white;
+  }
+}
 
+.collapse__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+<<<<<<< Updated upstream
   @media only screen and (min-width: 750px) {
     height: 76.8px;
   };
+=======
+.collapse__container--top-row {
+  justify-self: flex-start;
+>>>>>>> Stashed changes
 }
+// .nav__links {
+//   color: map-get($map: $colors, $key: orange ) !important;
+// }

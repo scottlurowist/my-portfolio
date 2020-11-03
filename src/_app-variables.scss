@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// _app-variables.scss
+//
+// This component defines application-wide variables for the portfolio app.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+// Override Bootstrap here before importing Bootstrap.
+$theme-colors: (
+  "dark":black,
+);
+
+
+// Now we can import Bootstrap. This must come after overrides since
+// Boostrap uses !default for defining properties.
+@import '~bootstrap/scss/bootstrap';
+
+
+// Sets the background, font, and navbar colors.
+// Paul chose orange, yellow, and gray.
+$colors: (bground: #2c2c2c, 
+          font: whitesmoke,
+          navbar: green,
+          orangeColor: #F15528,
+          yellowColor: #FDB913,
+          grayColor: #8c8c8c);
+
+// Also defined by Paul.          
+// Main font: Myriad Pro (for your name I just set it to Bold)
+// Ruskie Flashcard Font: BalboaPlus
+// Instasham Font: Hucklebuck JF
+
+// Use this font family anywhere handwritten fonts are used.          
+$handwritten-font-family: 'Kalam', cursive; 
+

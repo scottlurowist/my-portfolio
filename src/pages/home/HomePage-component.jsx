@@ -11,6 +11,9 @@ import React from 'react';
 
 import TypingText from './../../components/typing-text/TypingText-component';
 
+//import ScottImage from './Scott_02.jpg';
+
+
 import './Homepage-component.scss';
 
 
@@ -44,7 +47,7 @@ class HomePage extends React.Component {
         
         return (
             <div className="homepage-container">
-                <div>
+                {/* <div>
                     <h2 className='typing-text'>
                         <TypingText textToRender={this.textToRender}
                                     renderSpeed={50}
@@ -92,6 +95,16 @@ class HomePage extends React.Component {
                     </div>   
                 </div>
             </div>
+
+                    <hr />
+                </div> */}
+                {/* <div hidden={!this.state.introRendered} 
+                     className='scott-image-container'>
+                    {/* <img src={ScottImage} alt='Scott Lurowist'
+                         className='scott-image' /> */}
+                </div>                    
+            // </div>
+
         );
     }
 }
