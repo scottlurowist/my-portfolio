@@ -63,7 +63,7 @@ function App() {
                       className='mr-3' />
                 </a>
                 <a href='https://www.linkedin.com/in/slurowistnynet' >
-                  <img src={LinkedInImage} alt='GitHub' height='32' width='32' />
+                  <img src={LinkedInImage} alt='LinkedIn' height='32' width='37.8' />
                 </a>
               </div>
             </div>
