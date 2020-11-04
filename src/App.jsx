@@ -13,7 +13,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-import HomePage from './pages/home/HomePage-component';
+import PortfolioView from './views/PortfolioView';
 
 import MyImage from './images/Scott_02.jpg';
 import GitHubImage from './images/GitHub-Mark-Light-64px.png';
@@ -71,7 +71,7 @@ function App() {
         </Navbar>
       </header>  
       <Switch>
-        <Route exact path='/' component={ HomePage }></Route>
+        <Route path='/' component={ PortfolioView }></Route>
       </Switch>
     </Fragment>
   );
