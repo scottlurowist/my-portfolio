@@ -25,29 +25,22 @@ class TypingText extends React.Component {
         this.renderSpeed = props.renderSpeed;
         this.finishedCallback = props.finishedCallback;
         this.typingTextTimer = null;
-        //this.areWeMounted = false;
         this.mounted = false;
+        this.isTyping = false;
             
         this.state = {
-            renderedText: '',
-            suppressTyping: props.suppressTyping
+            renderedText: ''
         };
     };
 
 
     typeText = () => {
-        if (!this.mounted) return; 
+        // This prevents recursive triggers that start recursive typing.
+        if (this.isTyping) return;
 
-        // This suppresses the typing of the text if the parent component
-        // doesn't want it. Simply set the rendered text state to the 
-        // entire string to be rendered.
-        if (this.state.suppressTyping) {
-            this.setState({ renderedText: this.props.textToRender})
-            //this.finishedCallback();
-            
-            return;
-        } 
+        this.isTyping = true;
 
+        // The typing begins.
         const textArray = this.textToRender.split('');
 
         this.typingTextTimer = setInterval(() => {
@@ -62,8 +55,10 @@ class TypingText extends React.Component {
                 textArray.splice(startIndex, stopIndex)});
 
             // Invoke the callback to let the parent component know that the text
-            // rendering has completed.
+            // rendering has completed. Also "cancel" the timer.
             if (textArray.length === 0 && this.finishedCallback) {
+                this.isTyping = true;
+                clearInterval(this.typingTextTimer);
                 this.finishedCallback();
             }
             
@@ -73,31 +68,26 @@ class TypingText extends React.Component {
         
     componentDidMount() {
         this.mounted = true;
-        this.typeText();
     };
 
 
     componentWillUnmount() {
-        //this.isMounted = false;
-        console.log(this.typingTextTimer)
         clearInterval(this.typingTextTimer);
         this.typingTextTimer = null;
-        console.log(this.typingTextTimer)
         this.finishedCallback = null;
-        //this.textToRender = null;
-        console.log('typing unmounting') 
     };
 
 
     render() {
-        if (this.state.suppressTyping) {
-            this.finishedCallback = null;
-            console.log('suppress typing')
-            return <Fragment>{this.textToRender}</Fragment>;
+        // This.props.startTyping will trigger then render method.
+        // this.typText() is what types the typing text. So this is
+        // what triggers the typing text. And the typing text will 
+        // cause the Fragment below to render.
+        if (this.props.startTyping && !this.isTyping) {
+            this.typeText();
         }
-        else {
-            return <Fragment>{ this.state.renderedText.toString() }</Fragment>
-        }
+
+        return <Fragment>{ this.state.renderedText.toString() }</Fragment>
     };
 };
 
