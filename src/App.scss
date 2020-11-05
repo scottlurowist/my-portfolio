@@ -24,7 +24,7 @@ a {
 // Fix the header so that all content scrolls underneath it but it
 // stays in place.
 header {
-  height: 15vh;
+  height: 12vh;
   left: 0;
   overflow: visible;
   position: fixed;
@@ -66,6 +66,11 @@ a {
 .container__typing-text {
   font-size: 1.5rem;
   margin: 2.0rem auto;
+  width:80%;
+
+  @media only screen and (min-width: 992px) {
+    width: 50%;
+  }
 }
 
 // Empty space that is the same height of the navbar. This exists so that 
@@ -75,7 +80,11 @@ a {
   // The height of our navbar buffer. This prevents the topmost content of the
   // page from sitting underneath the fixed navbar which is removed from the
   // document flow. 
-  height: 15vh;
+  height: 22vh;
+
+  @media only screen and (min-width: 992px) {
+    height: 15vh;
+  }  
 }
 
 .container-skills {
@@ -117,90 +126,105 @@ a {
   width:80%;
 }
 
-
-  // // iPhone 4 portrait dimensions.
-  @media only screen and (min-width: 320px) and (min-height: 480px) {
-    .container__typing-text {
-      height: 35vh;
-      width: 80%;
-    }
-
-    #img_scott {
-      height: 20%;
-      width: 20%;
-    }
+@media only screen and (min-width: 992px) {
+  #img_scott {
+    height: 10%;
+    width: 10%;
   }
+
+  .header__buffer {
+    // The height of our navbar buffer. This prevents the topmost content of the
+    // page from sitting underneath the fixed navbar which is removed from the
+    // document flow. 
+    height: 15vh;
+  }
+
+
+  width:80%;
+}
+  // // iPhone 4 portrait dimensions.
+  // @media only screen and (min-width: 320px) and (min-height: 480px) {
+  //   .container__typing-text {
+  //     height: 35vh;
+  //     width: 80%;
+  //   }
+
+  //   #img_scott {
+  //     height: 20%;
+  //     width: 20%;
+  //   }
+  // }
 
   // iPhone 5/SE portrait dimensions.
-  @media only screen and (min-width: 320px) and (min-height: 568px) {
-    .container__typing-text {
-      width:80%;
-    }
-  }
+  // @media only screen and (min-width: 320px) and (min-height: 568px) {
+  //   .container__typing-text {
+  //     width:80%;
+  //   }
+  // }
 
   // Galaxy Note 2, Moto G4, Galaxy S5 portrait dimensions.
-  @media only screen and (min-width: 360px) and (min-height: 640px) {
+  // @media only screen and (min-width: 360px) and (min-height: 640px) {
     
-    .header__buffer {
+  //   .header__buffer {
 
-      // The height of our navbar buffer. This prevents the topmost content of the
-      // page from sitting underneath the fixed navbar which is removed from the
-      // document flow. 
-      height: 20vh;
-    }
+  //     // The height of our navbar buffer. This prevents the topmost content of the
+  //     // page from sitting underneath the fixed navbar which is removed from the
+  //     // document flow. 
+  //     height: 20vh;
+  //   }
 
-    .container__typing-text {
-      height: 25vh;
-      width: 70%;
-    }
+  //   .container__typing-text {
+  //     height: 25vh;
+  //     width: 70%;
+  //   }
 
-    #img_scott {
-      height: 20%;
-      width: 20%;
-    }
-  }
+  //   #img_scott {
+  //     height: 20%;
+  //     width: 20%;
+  //   }
+  // }
 
   // iPhone 6,7,8 portrait dimensions.
-  @media only screen and (min-width: 375px) and (min-height: 667px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 375px) and (min-height: 667px) {
+  //   //font-size: 1.50rem;
+  // }
 
   // iPhone X portrait dimensions.
-  @media only screen and (min-width: 375px) and (min-height: 812px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 375px) and (min-height: 812px) {
+  //   //font-size: 1.50rem;
+  // }
 
   // Pixel 2 portrait dimensions.
-  @media only screen and (min-width: 411px) and (min-width: 731px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 411px) and (min-width: 731px) {
+  //   //font-size: 1.50rem;
+  // }
 
   // iPhone 6 Plus portrait dimensions.
-  @media only screen and (min-width: 414px) and (min-height: 736px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 414px) and (min-height: 736px) {
+  //   //font-size: 1.50rem;
+  // }
 
   // iPad Mini, iPad portrait dimensions.
-  @media only screen and (min-width: 768px) and (min-width: 1024px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 768px) and (min-width: 1024px) {
+  //   //font-size: 1.50rem;
+  // }
 
   // iPad Pro portrait dimensions.
-  @media only screen and (min-width: 1024px) and (min-width: 1336px) {
-    //font-size: 1.50rem;
-  }
+  // @media only screen and (min-width: 1024px) and (min-width: 1336px) {
+  //   //font-size: 1.50rem;
+  // }
 
-  @media only screen and (orientation: landscape) {
-    #img_scott {
-      height: 10%;
-      width: 10%;
-    }
+  // @media only screen and (min-width: 992px) {
+  //   #img_scott {
+  //     height: 10%;
+  //     width: 10%;
+  //   }
 
-    .container__typing-text {
-      height: 50vh;
-      width: 40%;
-    }
-  }
+  //   .container__typing-text {
+  //     height: 50vh;
+  //     width: 40%;
+  //   }
+  // }
   
 
 
