@@ -29,6 +29,7 @@ header {
   overflow: visible;
   position: fixed;
   top: 0;
+  width:100%;
 }
 
 .navbar-container {
@@ -46,29 +47,31 @@ a {
   align-items: center;
   display: flex;
   flex-direction: row;
-  img {
-    border: 2px solid white;
-    height: 10%;
-    width: 10%;
-  }
   justify-content: flex-start;
+}
+
+// My image of course.
+#img-scott {
+  border: 2px solid white;
 }
 
 // This styles the collapsible portion of our navbar.
 .collapse__container {
-  align-items: flex-start;  
+  align-items: flex-end;  
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 // This is the container in which the typing text is typed.
 .container__typing-text {
   font-size: 1.5rem;
-  margin: 2.0rem auto;
-  width:80%;
+  margin: 3rem auto 2rem auto;
+  width:90%;
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 410px) {
+    margin: 3rem 15% 2rem auto;
     width: 50%;
   }
 }
@@ -80,33 +83,24 @@ a {
   // The height of our navbar buffer. This prevents the topmost content of the
   // page from sitting underneath the fixed navbar which is removed from the
   // document flow. 
-  height: 22vh;
+  height: 18vh;
 
-  @media only screen and (min-width: 992px) {
-    height: 15vh;
+  // This is the breakpoint at which the hamburger icon stops tucking underneath
+  // my image. So we don't need such a tall buffer because the navbar is not
+  // so tall.
+  @media only screen and (min-width: 373px) {
+    height: 12vh;
   }  
 }
 
-.container-skills {
+.container-skills-projects {
   border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
   color: map-get($map: $colors, $key: orangeColor);
+  font-size: 1.40rem;
   margin: 0 auto;
   p {
     color: white;
-    text-align: left;
-  }
-  padding-top: 3.25rem;
-  text-align: center;
-  width:80%;
-}
-
-.container-portfolio {
-  border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
-  color: map-get($map: $colors, $key: orangeColor);
-  margin: 0 auto;
-  p {
-    color: white;
-    text-align: left;
+    text-align: center;
   }
   padding-top: 3.25rem;
   text-align: center;
@@ -123,25 +117,21 @@ a {
   }
   padding-top: 3.25rem;
   text-align: center;
-  width:80%;
+  width: 80%;
 }
 
-@media only screen and (min-width: 992px) {
-  #img_scott {
-    height: 10%;
-    width: 10%;
-  }
+// @media only screen and (min-width: 992px) {
 
-  .header__buffer {
-    // The height of our navbar buffer. This prevents the topmost content of the
-    // page from sitting underneath the fixed navbar which is removed from the
-    // document flow. 
-    height: 15vh;
-  }
+  // .header__buffer {
+  //   // The height of our navbar buffer. This prevents the topmost content of the
+  //   // page from sitting underneath the fixed navbar which is removed from the
+  //   // document flow. 
+  //   height: 15vh;
+  // }
 
 
-  width:80%;
-}
+  // width:80%;
+
   // // iPhone 4 portrait dimensions.
   // @media only screen and (min-width: 320px) and (min-height: 480px) {
   //   .container__typing-text {

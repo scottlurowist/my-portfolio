@@ -10,6 +10,8 @@
 import React, { Fragment } from 'react';
 
 import Introduction from '../components/Introduction/Introduction';
+import Skills from '../components/Skills/Skills';
+import Projects from '../components/Projects/Projects';
 import AboutMe from './../components/AboutMe/AboutMe';
 
 
@@ -31,7 +33,7 @@ class PortfolioView extends React.Component {
     introductionHasFinishedRendering = () => {
         this.timer = setTimeout(() => {
             this.setState({ displaySite: 'block' });
-        }, 1000);
+        }, 2500);
     };
 
 
@@ -46,16 +48,16 @@ class PortfolioView extends React.Component {
                 <div id='home' className='header__buffer'></div> 
                 <Introduction introductionIsFinishedCallback={this.introductionHasFinishedRendering} />
                 <div id='skills-buffer' className='header__buffer'></div>  
-                <section className='container-skills'
+                <section className='container-skills-projects'
                          style={{display: this.state.displaySite}}>
-                    <h4>Skills</h4>                    
+                    <Skills />                    
                 </section>
                 <div id='portfolio-buffer' className='header__buffer'></div>  
-                <section className='container-portfolio'
+                <section className='container-skills-projects'
                          style={{display: this.state.displaySite}}>
-                    <h4>Portfolio</h4>                    
+                    <Projects />             
                 </section>                
-                <div id='about-me-buffer' className='header__buffer'></div>  
+                <div id='about-me-buffer' className='header__buffer'></div>
                 <section className='container-about-me'
                          style={{display: this.state.displaySite}}>
                     <AboutMe />             

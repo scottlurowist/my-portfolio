@@ -15,7 +15,7 @@ import React, { Fragment } from 'react';
 const AboutMe = () => {
     return (
         <Fragment>
-            <h4>About Me</h4>
+            <h4>ABOUT ME</h4>
             <hr  />
             <p>
                 I started my career as an electrical engineer and an avionics systems specialist

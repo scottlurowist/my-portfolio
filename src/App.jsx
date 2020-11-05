@@ -32,23 +32,27 @@ function App() {
         <Navbar bg="dark" expand="lg" className='navbar-container'>
           <Navbar.Brand href="#home">
             <div className='brand__container'>
-              <img id='img_scott' src={MyImage} alt='Scott Lurowist'
-                   className='rounded-circle' />
+              <div>
+                <img id='img-scott' src={MyImage} 
+                    height='60' width='60'
+                    alt='Scott Lurowist'
+                    className='rounded-circle' />
+              </div>
               <div>
                 <div>
                   <span className='ml-3 text-light'>SCOTT LUROWIST</span>   
                 </div>
                 <div>
                   <span className='ml-3 text-secondary'>Fullstack Developer</span>   
-                </div>           
-              </div>
+                </div>   
+              </div>     
             </div>
           </Navbar.Brand>
           <Navbar.Toggle className='navbar-dark' aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className='collapse__container'>
               <div className='collapse__container--top-row'>
-                <Nav className="mr-auto">
+                <Nav className="ml-auto">
                   <Nav.Link href="#home">HOME</Nav.Link>
                   <Nav.Link href="#skills-buffer">SKILLS</Nav.Link>
                   <Nav.Link href="#portfolio-buffer">PORTFOLIO</Nav.Link>
