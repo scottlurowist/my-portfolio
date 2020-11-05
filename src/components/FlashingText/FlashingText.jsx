@@ -23,6 +23,7 @@ class FlashingText extends React.Component {
 
         this.wordsToRender = [].concat(this.props.wordsToRender);
         this.renderSpeed = props.renderSpeed;
+        this.repeatCycle = props.repeatCycle;
         this.finishedCallback = props.finishedCallback;
         this.flashingTextTimer = null;
         this.mounted = false;
@@ -38,6 +39,10 @@ class FlashingText extends React.Component {
         // This prevents recursive triggers that start recursive flashing.
         if (this.isFlashing) return;
 
+        // If there are no more words to display are we are not on a 
+        // repeat cycle, then there is nothing to do. Just return.
+        if (!this.repeatCycle && this.wordsToRender.length === 0) return; 
+
         this.isFlashing = true;
 
         this.flashingTextTimer = setInterval(() => {
@@ -46,12 +51,12 @@ class FlashingText extends React.Component {
 
             this.setState({ renderedText: currentWordToShift });
 
-            this.wordsToRender.push(currentWordToShift);
+            if (this.repeatCycle) this.wordsToRender.push(currentWordToShift);
 
             // Invoke the callback to let the parent component know that the text
             // rendering has completed. Also "cancel" the timer.
             if (this.wordsToRender.length === 0 && this.finishedCallback) {
-                this.isFlashing = true;
+                this.isFlashing = false;
                 clearInterval(this.flashingTextTimer);
                 this.finishedCallback();
             }

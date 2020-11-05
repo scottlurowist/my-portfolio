@@ -29,18 +29,17 @@ function App() {
   return (
     <Fragment>
       <header>
-        <Navbar bg="dark" expand="lg">
+        <Navbar bg="dark" expand="lg" className='navbar-container'>
           <Navbar.Brand href="#home">
             <div className='brand__container'>
-              <img src={MyImage} alt='Scott Lurowist'
-                   className='rounded-circle'
-                   height='5%' width='5%' />
+              <img id='img_scott' src={MyImage} alt='Scott Lurowist'
+                   className='rounded-circle' />
               <div>
                 <div>
                   <span className='ml-3 text-light'>SCOTT LUROWIST</span>   
                 </div>
                 <div>
-                  <span className='ml-3 text-light'>Fullstack Developer</span>   
+                  <span className='ml-3 text-secondary'>Fullstack Developer</span>   
                 </div>           
               </div>
             </div>
@@ -51,13 +50,13 @@ function App() {
               <div className='collapse__container--top-row'>
                 <Nav className="mr-auto">
                   <Nav.Link href="#home">HOME</Nav.Link>
-                  <Nav.Link href="#link">SKILLS</Nav.Link>
-                  <Nav.Link href="#link">PORTFOLIO</Nav.Link>
-                  <Nav.Link href="#link">ABOOT</Nav.Link>
+                  <Nav.Link href="#skills-buffer">SKILLS</Nav.Link>
+                  <Nav.Link href="#portfolio-buffer">PORTFOLIO</Nav.Link>
+                  <Nav.Link href="#about-me-buffer">ABOOT</Nav.Link>
                 </Nav>
               </div>
               <div className='collapse__container--bottom-row'>
-                <span className='mr-3 pl-2'>scottlurowist@gmail.com</span>
+                <span className='mr-3 pl-2 text-secondary'>scottlurowist@gmail.com</span>
                 <a href='https://github.com/scottlurowist' >
                   <img src={GitHubImage} alt='GitHub' height='32' width='32'
                       className='mr-3' />
@@ -69,7 +68,7 @@ function App() {
             </div>
           </Navbar.Collapse>
         </Navbar>
-      </header>  
+      </header>
       <Switch>
         <Route path='/' component={ PortfolioView }></Route>
       </Switch>

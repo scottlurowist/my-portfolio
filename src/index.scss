@@ -18,7 +18,8 @@
 }
 
 body {
-  background-color: map-get($map: $colors, $key: bground );
+  background-image: url('./images/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.jpg');
+  background-size: cover;
   color: map-get($map: $colors, $key: font );
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',

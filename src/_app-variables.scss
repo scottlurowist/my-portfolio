@@ -16,6 +16,7 @@ $colors: (bground: #2c2c2c,
 // Override Bootstrap here before importing Bootstrap.
 $theme-colors: (
   "dark":black,
+  "secondary": #8c8c8c
 );
 
 
@@ -32,6 +33,9 @@ $colors: (bground: #2c2c2c,
           orangeColor: #F15528,
           yellowColor: #FDB913,
           grayColor: #8c8c8c);
+
+      
+
 
 // Also defined by Paul.          
 // Main font: Myriad Pro (for your name I just set it to Bold)
