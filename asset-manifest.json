@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.11e8452a.chunk.css",
+    "main.css": "/static/css/main.769ca5a4.chunk.css",
     "main.js": "/static/js/main.f39e1dba.chunk.js",
     "main.js.map": "/static/js/main.f39e1dba.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
@@ -8,9 +8,9 @@
     "static/js/2.09013099.chunk.js": "/static/js/2.09013099.chunk.js",
     "static/js/2.09013099.chunk.js.map": "/static/js/2.09013099.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e69877f2f900384a7c61f00de5c7aafc.js": "/precache-manifest.e69877f2f900384a7c61f00de5c7aafc.js",
+    "precache-manifest.ea4905c9d77d0d0a85765d94c9e3f94f.js": "/precache-manifest.ea4905c9d77d0d0a85765d94c9e3f94f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.11e8452a.chunk.css.map": "/static/css/main.11e8452a.chunk.css.map",
+    "static/css/main.769ca5a4.chunk.css.map": "/static/css/main.769ca5a4.chunk.css.map",
     "static/js/2.09013099.chunk.js.LICENSE.txt": "/static/js/2.09013099.chunk.js.LICENSE.txt",
     "static/media/Scott_02.jpg": "/static/media/Scott_02.12be17e6.jpg",
     "static/media/index.scss": "/static/media/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.463ca8a0.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
     "static/js/2.09013099.chunk.js",
-    "static/css/main.11e8452a.chunk.css",
+    "static/css/main.769ca5a4.chunk.css",
     "static/js/main.f39e1dba.chunk.js"
   ]
 }
