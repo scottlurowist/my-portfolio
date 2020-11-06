@@ -65,11 +65,13 @@ function App() {
                     scottlurowist@gmail.com
                   </span>
                 </a>
-                <a href='https://github.com/scottlurowist' >
+                <a href='https://github.com/scottlurowist'
+                   target='_blank' rel='noopener noreferrer' >
                   <img src={GitHubImage} alt='GitHub' height='32' width='32'
                       className='mr-3' />
                 </a>
-                <a href='https://www.linkedin.com/in/slurowistnynet' >
+                <a href='https://www.linkedin.com/in/slurowistnynet'
+                   target='_blank' rel='noopener noreferrer' >
                   <img src={LinkedInImage} alt='LinkedIn' height='32' width='37.8' />
                 </a>
               </div>

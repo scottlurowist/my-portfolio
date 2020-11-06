@@ -38,9 +38,9 @@ class Projects extends React.Component {
                     <div className='container-projects'>
                         <div className='project'>
                             <img src={RussianFlashcardsImage}
-                                    height={this.projectImageHeight}
-                                    witdh={this.projectImageWidth}
-                                    alt='Russian Flashcards' />
+                                 height={this.projectImageHeight}
+                                 witdh={this.projectImageWidth}
+                                 alt='Russian Flashcards' />
                             <div>
                                 <p>RUSSIAN FLASHCARDS</p>
                                 <p>
@@ -64,9 +64,9 @@ class Projects extends React.Component {
                         </div>
                         <div className='project'>
                             <img src={RussianFlashcardsImage}
-                                    height={this.projectImageHeight}
-                                    witdh={this.projectImageWidth}
-                                    alt='Russian Flashcards' />
+                                 height={this.projectImageHeight}
+                                 witdh={this.projectImageWidth}
+                                 alt='Russian Flashcards' />
                             <div>
                                 <p>RUSSIAN FLASHCARDS</p>
                                 <p>
@@ -90,9 +90,9 @@ class Projects extends React.Component {
                         </div> 
                         <div className='project'>
                             <img src={RussianFlashcardsImage}
-                                    height={this.projectImageHeight}
-                                    witdh={this.projectImageWidth}
-                                    alt='Russian Flashcards' />
+                                 height={this.projectImageHeight}
+                                 witdh={this.projectImageWidth}
+                                 alt='Russian Flashcards' />
                             <div>
                                 <p>RUSSIAN FLASHCARDS</p>
                                 <p>

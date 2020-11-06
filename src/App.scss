@@ -107,19 +107,54 @@ header {
   width:80%;
 }
 
-.container-about-me {
-  border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
-  color: map-get($map: $colors, $key: orangeColor);
-  margin: 0 auto;
-  p {
-    color: white;
-    font-size: 1.3rem;
-    text-align: left;
-  }
-  padding-top: 3.25rem;
-  text-align: center;
-  width: 80%;
+.container-skills {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.skill-card {
+  background-color: whitesmoke;
+  display: inline-block;
+  border: #2a2a2a solid 0px;
+  border-radius: 0.75rem;
+  margin: 1.5rem;
+  padding: 0.25rem;
+  width: 90px;
+  height: 90px;
+
+  // @media only screen and (min-width: $non-mobile-min-width) {
+  //     width:180px;
+  //     height: 180px;
+  // }    
+}
+
+.skill-card-javascript {
+  @extend .skill-card;    
+  padding: 0px;
+}
+
+.skill-card-nodejs {
+  @extend .skill-card;    
+  width: 135px;
+  // @media only screen and (min-width: $non-mobile-min-width) {
+  //     width:270px;
+  // }        
+}
+
+.skill-card-mongodb {
+  @extend .skill-card;    
+  background-color: white;
+  width: 180px;
+
+  // @media only screen and (min-width: $non-mobile-min-width) {
+  //     width:360px;
+  // }        
+}
+
+
 
 .container-projects {
   align-items: center;
@@ -157,6 +192,22 @@ header {
     width: 28%;
   }  
 }
+
+.container-about-me {
+  border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
+  color: map-get($map: $colors, $key: orangeColor);
+  margin: 0 auto;
+  p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  padding-top: 3.25rem;
+  text-align: center;
+  width: 80%;
+}
+
+
 
 // @media only screen and (min-width: 992px) {
 
