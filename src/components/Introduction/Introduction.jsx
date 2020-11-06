@@ -26,7 +26,8 @@ class Home extends React.Component {
         this.thirdTextParagraphToType = "I am a ";
         this.fourthTextParagraphToType = 'Welcome to my portfolio.';
         this.rolesToFlash =
-            ['software developer.', 'computer scientist.', 'full stack developer.'];
+            ['software developer.', 'computer hobbyist.',
+             'computer scientist.', 'full stack developer.'];
         this.textToFlash= ['', '_']; 
         this.firstTimer = null;
         this.secondTimer = null;

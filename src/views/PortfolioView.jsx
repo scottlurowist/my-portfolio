@@ -25,7 +25,7 @@ class PortfolioView extends React.Component {
         this.timer = null;
 
         this.state = {
-            displaySite: 'none'
+            displaySite: 'block'
         };
     }
 
@@ -46,7 +46,7 @@ class PortfolioView extends React.Component {
         return (
             <Fragment>
                 <div id='home' className='header__buffer'></div> 
-                <Introduction introductionIsFinishedCallback={this.introductionHasFinishedRendering} />
+                {/* <Introduction introductionIsFinishedCallback={this.introductionHasFinishedRendering} /> */}
                 <div id='skills-buffer' className='header__buffer'></div>  
                 <section className='container-skills-projects'
                          style={{display: this.state.displaySite}}>

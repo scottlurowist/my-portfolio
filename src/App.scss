@@ -33,14 +33,14 @@ header {
 }
 
 .navbar-container {
+  a {
+    // The reluctant use of !important it to override React Bootstrap's 
+    // styling of the links, which I currently don't understand.
+    color: map-get($map: $colors, $key: orangeColor) !important;
+  }
   border-bottom: 0.4rem solid map-get($map: $colors, $key: yellowColor);
 }
 
-a {
-  // The reluctant use of !important it to override React Bootstrap's 
-  // styling of the links, which I currently don't understand.
-  color: map-get($map: $colors, $key: orangeColor) !important;
-}
 
 // This styles the "brand" portion of the navbar.
 .brand__container {
@@ -113,11 +113,49 @@ a {
   margin: 0 auto;
   p {
     color: white;
+    font-size: 1.3rem;
     text-align: left;
   }
   padding-top: 3.25rem;
   text-align: center;
   width: 80%;
+}
+
+.container-projects {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  p:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+.project {
+  a {
+    color: map-get($map: $colors, $key: orangeColor);
+    font-size: 1rem;
+    &:hover {
+      text-decoration: none;
+    }
+    text-decoration: none;
+  }
+  margin: 2rem;
+  text-decoration: none;
+  span {
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  width: 75%;
+
+  // This is the breakpoint at which the hamburger icon stops tucking underneath
+  // my image. So we don't need such a tall buffer because the navbar is not
+  // so tall.
+  @media only screen and (min-width: 500px) {
+    width: 28%;
+  }  
 }
 
 // @media only screen and (min-width: 992px) {

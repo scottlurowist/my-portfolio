@@ -60,7 +60,11 @@ function App() {
                 </Nav>
               </div>
               <div className='collapse__container--bottom-row'>
-                <span className='mr-3 pl-2 text-secondary'>scottlurowist@gmail.com</span>
+                <a href='mailto:scottlurowist@gmail.com'>
+                  <span className='mr-3 pl-2 text-secondary'>
+                    scottlurowist@gmail.com
+                  </span>
+                </a>
                 <a href='https://github.com/scottlurowist' >
                   <img src={GitHubImage} alt='GitHub' height='32' width='32'
                       className='mr-3' />
