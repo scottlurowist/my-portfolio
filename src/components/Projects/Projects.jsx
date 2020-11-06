@@ -34,7 +34,7 @@ class Projects extends React.Component {
             <Fragment>
                 <div>
                     <h4>PORTFOLIO</h4>
-                    <p>Some of the #$%^ I did done</p>
+                    <p>Some of my work... </p>
                     <div className='container-projects'>
                         <div className='project'>
                             <img src={RussianFlashcardsImage}
