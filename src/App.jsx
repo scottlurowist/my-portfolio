@@ -56,7 +56,7 @@ function App() {
                   <Nav.Link href="#home">HOME</Nav.Link>
                   <Nav.Link href="#skills-buffer">SKILLS</Nav.Link>
                   <Nav.Link href="#portfolio-buffer">PORTFOLIO</Nav.Link>
-                  <Nav.Link href="#about-me-buffer">ABOOT</Nav.Link>
+                  <Nav.Link href="#about-me-buffer">ABOUT</Nav.Link>
                 </Nav>
               </div>
               <div className='collapse__container--bottom-row'>
@@ -85,6 +85,8 @@ function App() {
     </Fragment>
   );
 }
+
+
 
 
 export default App;

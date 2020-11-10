@@ -9,13 +9,11 @@
 
 import React, { Fragment } from 'react';
 
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import Project from '../Project/Project';
 
-import GitHubImage from '../../images/GitHub-Mark-Light-64px.png';
 import RussianFlashcardsImage from '../../images/RussianFlashCard_01.png';
+import InstashamImage from '../../images/Instasham_01.png';
+
 
 
 
@@ -36,86 +34,19 @@ class Projects extends React.Component {
                     <h4>PORTFOLIO</h4>
                     <p>Some of my work... </p>
                     <div className='container-projects'>
-                        <div className='project'>
-                            <img src={RussianFlashcardsImage}
-                                 height={this.projectImageHeight}
-                                 witdh={this.projectImageWidth}
-                                 alt='Russian Flashcards' />
-                            <div>
-                                <p>RUSSIAN FLASHCARDS</p>
-                                <p>
-                                    An Russian flashcard app built using React.js
-                                </p>
-                                <div>
-                                    <div>
-                                        <span>View the source code:</span>
-                                        <a href='https://github.com/scottlurowist/russian-flashcards-react' 
-                                           target='_blank' rel='noopener noreferrer'>
-                                            <img src={GitHubImage} alt='GitHub' height='32' width='32' />
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href='https://scottlurowist.github.io/russian-flashcards-react/#/' >
-                                            Try the app!
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='project'>
-                            <img src={RussianFlashcardsImage}
-                                 height={this.projectImageHeight}
-                                 witdh={this.projectImageWidth}
-                                 alt='Russian Flashcards' />
-                            <div>
-                                <p>RUSSIAN FLASHCARDS</p>
-                                <p>
-                                    An Russian flashcard app built using React.js
-                                </p>
-                                <div>
-                                    <div>
-                                        <span>View the source code:</span>
-                                        <a href='https://github.com/scottlurowist/russian-flashcards-react' 
-                                           target='_blank' rel='noopener noreferrer'>
-                                            <img src={GitHubImage} alt='GitHub' height='32' width='32' />
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href='https://scottlurowist.github.io/russian-flashcards-react/#/' >
-                                            Try the app!
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div className='project'>
-                            <img src={RussianFlashcardsImage}
-                                 height={this.projectImageHeight}
-                                 witdh={this.projectImageWidth}
-                                 alt='Russian Flashcards' />
-                            <div>
-                                <p>RUSSIAN FLASHCARDS</p>
-                                <p>
-                                    An Russian flashcard app built using React.js
-                                </p>
-                                <div>
-                                    <div>
-                                        <span>View the source code:</span>
-                                        <a href='https://github.com/scottlurowist/russian-flashcards-react' 
-                                           target='_blank' rel='noopener noreferrer'>
-                                            <img src={GitHubImage} alt='GitHub' height='32' width='32' />
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href='https://scottlurowist.github.io/russian-flashcards-react/#/' >
-                                            Try the app!
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                                                  
+                        <Project imageUrl={RussianFlashcardsImage}
+                                 altText='Russian Flashcards'
+                                 projectTitle='RUSSIAN FLASHCARDS'
+                                 projectSummary='A Russian flashcards app for vocabulary acquisition.'
+                                 gitHubUrl='https://github.com/scottlurowist/russian-flashcards-react'
+                                 applicationUrl='https://scottlurowist.github.io/russian-flashcards-react/#/' />
+                        <Project imageUrl={InstashamImage}
+                                 altText='Instasham'
+                                 projectTitle='INSTASHAM'
+                                 projectSummary='A group project that is a lightweight clone of Instagram.'
+                                 gitHubUrl='https://github.com/scottlurowist/group-project-front-end'
+                                 applicationUrl='https://sei-tigers-404brainnotfound.github.io/group-project-front-end/#/' />                                 
                     </div>
-                    
                 </div>
             </Fragment>
         );

@@ -42,6 +42,9 @@ class PortfolioView extends React.Component {
     }
 
 
+    // A React.js lifecyle method that is invoked whenever state and/or props
+    // change and renders the component.
+    //
     render() {
         return (
             <Fragment>
