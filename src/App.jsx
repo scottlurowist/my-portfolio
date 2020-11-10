@@ -40,7 +40,7 @@ function App() {
               </div>
               <div>
                 <div>
-                  <span className='ml-3 text-light'>SCOTT LUROWIST</span>   
+                  <span id='header-my-name' className='ml-3 text-light'>SCOTT LUROWIST</span>   
                 </div>
                 <div>
                   <span className='ml-3 text-secondary'>Fullstack Developer</span>   

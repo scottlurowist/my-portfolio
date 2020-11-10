@@ -38,11 +38,12 @@ function Project(props) {
                             <a href={ props.gitHubUrl } 
                                 target='_blank' rel='noopener noreferrer'>
                                 <img src={GitHubImage} alt='GitHub' height='32' width='32'
-                                        target='_blank' rel='noopener noreferrer'></img>
+                                     target='_blank' rel='noopener noreferrer'></img>
                             </a>
                         </div>
                         <div>
-                            <a href={ props.applicationUrl } >
+                            <a href={ props.applicationUrl } target='_blank'
+                               rel='noopener noreferrer'>
                                 Try the app!
                             </a>
                         </div>
