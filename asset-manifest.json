@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.903aca2a.chunk.css",
-    "main.js": "/static/js/main.d33a5b79.chunk.js",
-    "main.js.map": "/static/js/main.d33a5b79.chunk.js.map",
+    "main.css": "/static/css/main.1a3eeafa.chunk.css",
+    "main.js": "/static/js/main.f52d5e2a.chunk.js",
+    "main.js.map": "/static/js/main.f52d5e2a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/js/2.92df3412.chunk.js": "/static/js/2.92df3412.chunk.js",
-    "static/js/2.92df3412.chunk.js.map": "/static/js/2.92df3412.chunk.js.map",
+    "static/js/2.eba69579.chunk.js": "/static/js/2.eba69579.chunk.js",
+    "static/js/2.eba69579.chunk.js.map": "/static/js/2.eba69579.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9005422b5346871713b27b28cbadb1c0.js": "/precache-manifest.9005422b5346871713b27b28cbadb1c0.js",
+    "precache-manifest.356b7be3e5663eefacf3d8ad01183033.js": "/precache-manifest.356b7be3e5663eefacf3d8ad01183033.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.903aca2a.chunk.css.map": "/static/css/main.903aca2a.chunk.css.map",
-    "static/js/2.92df3412.chunk.js.LICENSE.txt": "/static/js/2.92df3412.chunk.js.LICENSE.txt",
+    "static/css/main.1a3eeafa.chunk.css.map": "/static/css/main.1a3eeafa.chunk.css.map",
+    "static/js/2.eba69579.chunk.js.LICENSE.txt": "/static/js/2.eba69579.chunk.js.LICENSE.txt",
     "static/media/Instasham_01.png": "/static/media/Instasham_01.e0f74915.png",
+    "static/media/index.scss": "/static/media/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.463ca8a0.jpg",
     "static/media/RussianFlashCard_01.png": "/static/media/RussianFlashCard_01.01713476.png",
     "static/media/Sass-01.54d4c686.png": "/static/media/Sass-01.54d4c686.54d4c686.png",
     "static/media/Scott_02.jpg": "/static/media/Scott_02.12be17e6.jpg",
-    "static/media/index.scss": "/static/media/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.463ca8a0.jpg",
+    "static/media/TicTacToe_Ani_01.gif": "/static/media/TicTacToe_Ani_01.7000485c.gif",
     "static/media/css3.png": "/static/media/css3.6b19ab42.png",
     "static/media/mongodb-logo.png": "/static/media/mongodb-logo.f04e4715.png",
     "static/media/nodejs-logo.png": "/static/media/nodejs-logo.88855eb6.png",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
-    "static/js/2.92df3412.chunk.js",
-    "static/css/main.903aca2a.chunk.css",
-    "static/js/main.d33a5b79.chunk.js"
+    "static/js/2.eba69579.chunk.js",
+    "static/css/main.1a3eeafa.chunk.css",
+    "static/js/main.f52d5e2a.chunk.js"
   ]
 }

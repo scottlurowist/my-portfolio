@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38dd334b18f7398d409e6573a0993704",
+    "revision": "c30addf5d5100822ef4e82e0959f32f8",
     "url": "/index.html"
   },
   {
-    "revision": "19924c451e73dd55d570",
-    "url": "/static/css/main.903aca2a.chunk.css"
+    "revision": "e0867cbdb0ed99d646b1",
+    "url": "/static/css/main.1a3eeafa.chunk.css"
   },
   {
-    "revision": "00b9ba14b24f75f4a988",
-    "url": "/static/js/2.92df3412.chunk.js"
+    "revision": "a519b7f303724c97d62c",
+    "url": "/static/js/2.eba69579.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/static/js/2.92df3412.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.eba69579.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19924c451e73dd55d570",
-    "url": "/static/js/main.d33a5b79.chunk.js"
+    "revision": "e0867cbdb0ed99d646b1",
+    "url": "/static/js/main.f52d5e2a.chunk.js"
   },
   {
     "revision": "efe25b4b8d1f7af9da4b",
@@ -26,6 +26,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0f7491505b73279b08c127159f5b01f",
     "url": "/static/media/Instasham_01.e0f74915.png"
+  },
+  {
+    "revision": "bfc84fcb6a1c571b2b96ae83833e6de1",
+    "url": "/static/media/MYRIADPRO-BOLD.bfc84fcb.OTF"
+  },
+  {
+    "revision": "d75d7f70aa160104a45a743eae7a8a7e",
+    "url": "/static/media/MYRIADPRO-REGULAR.d75d7f70.OTF"
+  },
+  {
+    "revision": "86bb1295004f3fbe40abef46553807f5",
+    "url": "/static/media/MYRIADPRO-SEMIBOLD.86bb1295.OTF"
   },
   {
     "revision": "017134767bed6b32e6d95b24c7116725",
@@ -38,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "12be17e6faeff658653bb2d842df7c39",
     "url": "/static/media/Scott_02.12be17e6.jpg"
+  },
+  {
+    "revision": "7000485c880f74be3cb96f3c4d9dcffa",
+    "url": "/static/media/TicTacToe_Ani_01.7000485c.gif"
   },
   {
     "revision": "463ca8a059735fb5b7eb8cd51d6bc8ee",
