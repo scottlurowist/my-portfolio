@@ -38,19 +38,24 @@ class Projects extends React.Component {
                         <Project imageUrl={RussianFlashcardsImage}
                                  altText='Russian Flashcards'
                                  projectTitle='RUSSIAN FLASHCARDS'
-                                 projectSummary='A Russian flashcards app for vocabulary acquisition.'
+                                 projectSummary='A Russian flashcards app for vocabulary acquisition.' 
+                                 techStack='React.js,React Bootstrap, SCSS, Axios, Express.js, Node.js,
+                                                 Mongoose.js, MongoDB'
                                  gitHubUrl='https://github.com/scottlurowist/russian-flashcards-react'
                                  applicationUrl='https://scottlurowist.github.io/russian-flashcards-react/#/' />
                         <Project imageUrl={InstashamImage}
                                  altText='Instasham'
                                  projectTitle='INSTASHAM'
                                  projectSummary='A group project that is a lightweight clone of Instagram.'
+                                 techStack='React.js,React Bootstrap, SCSS, Axios, Express.js, Node.js,
+                                            Mongoose.js, MongoDB, AWS S3'
                                  gitHubUrl='https://github.com/scottlurowist/group-project-front-end'
                                  applicationUrl='https://sei-tigers-404brainnotfound.github.io/group-project-front-end/#/' /> 
                         <Project imageUrl={TicTacToeImage}
                                  altText='Tic-Tac-Toe'
-                                 projectTitle='Tic-Tac-Toe'
-                                 projectSummary='Tic-tac-toe using vanilla JavaScript, HTML, CSS, and jQuery.'
+                                 projectTitle='TIC-TAC-TOE'
+                                 projectSummary='Single player Tic-tac-toe. The user plays both X and O.'
+                                 techStack='Vanilla JavaScript, HTML, SCSS, jQuery'
                                  gitHubUrl='https://github.com/scottlurowist/tic-tac-toe'
                                  applicationUrl='https://scottlurowist.github.io/tic-tac-toe/' />                                          
                     </div>

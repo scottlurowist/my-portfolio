@@ -25,29 +25,26 @@ function Project(props) {
     return(
         <Fragment>
             <div className='project'>
-                <img src={ props.imageUrl }
-                        height={ projectImageHeight }
-                        witdh={ projectImageWidth }
-                        alt={ props.altText } />
+            <a href={ props.applicationUrl } target='_blank'
+               rel='noopener noreferrer' >
+                    <img src={ props.imageUrl }
+                            height={ projectImageHeight }
+                            witdh={ projectImageWidth }
+                            alt={ props.altText } />
+                </a>        
                 <div>
                     <p>{ props.projectTitle }</p>
                     <p>{ props.projectSummary }</p>
+                    <p>{ props.techStack }</p>                    
                     <div>
                         <div>
-                            <span>View the source code:</span>
                             <a href={ props.gitHubUrl } 
                                 target='_blank' rel='noopener noreferrer'>
                                 <img src={GitHubImage} alt='GitHub' height='32' width='32'
                                      target='_blank' rel='noopener noreferrer'></img>
                             </a>
                         </div>
-                        <div>
-                            <a href={ props.applicationUrl } target='_blank'
-                               rel='noopener noreferrer'>
-                                Try the app!
-                            </a>
-                        </div>
-                    </div>
+                     </div>
                 </div>
             </div>
         </Fragment>

@@ -159,8 +159,11 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  p:nth-child(2) {
-    font-size: 1rem;
+  p:nth-child(1n+1) {
+    font-size: 1.25rem;
+  }
+  p:first-child {
+    font-size: 1.50rem;
   }
 }
 
