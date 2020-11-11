@@ -86,7 +86,7 @@ class FlashingText extends React.Component {
             this.flashText();
         }
 
-        return <Fragment>{ this.state.renderedText }</Fragment>
+        return <span>{ this.state.renderedText }</span>
     };
 };
 

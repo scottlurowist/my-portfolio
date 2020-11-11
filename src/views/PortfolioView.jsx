@@ -14,9 +14,13 @@ import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
 import AboutMe from './../components/AboutMe/AboutMe';
 
+import UpArrowImage from '../images/white-up-arrow-png-10-transparent.png';
 
 
 
+
+// This component renders the entire view for the portfolio.
+//
 class PortfolioView extends React.Component {
 
     constructor() {
@@ -24,19 +28,27 @@ class PortfolioView extends React.Component {
 
         this.timer = null;
 
+        // Set to 'none' so that the rest of the site does not appear until
+        // the typing text is finished.
         this.state = {
             displaySite: 'none'
         };
     }
 
 
+    // A callback that is invoked when the typing text is finished. It makes
+    // the rest of the site appear.
+    //
     introductionHasFinishedRendering = () => {
         this.timer = setTimeout(() => {
             this.setState({ displaySite: 'block' });
-        }, 2500);
+        }, 2750);
     };
 
 
+    // A React.js lifecycle method that is invoked before after a
+    // component is unmounted (removed from the DOM). 
+    //
     componentWillUnmount() {
         clearTimeout(this.timer);
     }
@@ -48,28 +60,36 @@ class PortfolioView extends React.Component {
     render() {
         return (
             <Fragment>
-                <div id='home' className='header__buffer'></div> 
-                <Introduction introductionIsFinishedCallback={this.introductionHasFinishedRendering} />
-                <div id='skills-buffer' className='header__buffer'></div>  
-                <section className='container-skills-projects'
+                <section id='container-introduction' className='section--portfolio-introduction'>
+                    <Introduction className='portfolio-container'
+                                  introductionIsFinishedCallback={this.introductionHasFinishedRendering} />
+                </section>
+                <section id='container-skills' className='section--portfolio'
                          style={{display: this.state.displaySite}}>
                     <Skills />                    
                 </section>
-                <div id='portfolio-buffer' className='header__buffer'></div>  
-                <section className='container-skills-projects'
+                <section id='container-projects' className='section--portfolio'
                          style={{display: this.state.displaySite}}>
                     <Projects />             
                 </section>                
-                <div id='about-me-buffer' className='header__buffer'></div>
-                <section className='container-about-me'
+                <section id='container-about-me' className='section--portfolio-about-me'
                          style={{display: this.state.displaySite}}>
                     <AboutMe />             
                 </section>
+                <footer>
+                    <div id='footer__div'>
+                        <div>
+                            <a href='#container-introduction'>
+                                <img src={UpArrowImage} alt='home' height='60' weight='60'
+                                    style={{display: this.state.displaySite}} />
+                            </a> 
+                        </div>
+                    </div>
+                </footer>
             </Fragment>
         );
     }
 }
-
 
 
 export default PortfolioView;

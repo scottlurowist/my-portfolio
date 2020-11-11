@@ -24,11 +24,10 @@ class Home extends React.Component {
         this.firstTextParagraphToType = 'Hello.';
         this.secondTextParagraphToType = 'My name is Scott Lurowist.';
         this.thirdTextParagraphToType = "I am a ";
-        this.fourthTextParagraphToType = 'Welcome to my portfolio.';
+        this.fourthTextParagraphToType = 'Welcome to my portfolio. ';
         this.rolesToFlash =
-            ['software developer.', 'computer hobbyist.',
-             'computer scientist.', 'full stack developer.'];
-        this.textToFlash= ['', '_']; 
+            ['software developer.', 'computer scientist.', 'full stack developer.'];
+        // this.textToFlash= ['&nbsp;', '_']; 
         this.firstTimer = null;
         this.secondTimer = null;
         this.thirdTimer = null;
@@ -150,12 +149,12 @@ class Home extends React.Component {
                                     finishedCallback=
                                         {this.typingTextFourthParagraphFinishedCallback} />
                         {/* <audio src={TypingAudio} ></audio> */}
-                        <FlashingText wordsToRender={this.textToFlash}
+                        {/* <FlashingText wordsToRender={this.textToFlash}
                                         renderSpeed={1000}
                                         repeatCycle={ true }
                                         startFlashing={ this.state.finalCharactersAreTyping }
                                         suppressTyping={ false }
-                                        finishedCallback= { null } />                                    
+                                        finishedCallback= { null } />                                     */}
                     </p >    
                 </section>
         </Fragment>

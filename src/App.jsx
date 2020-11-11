@@ -33,10 +33,9 @@ function App() {
           <Navbar.Brand href="#home">
             <div className='brand__container'>
               <div>
-                <img id='img-scott' src={MyImage} 
-                    height='60' width='60'
-                    alt='Scott Lurowist'
-                    className='rounded-circle' />
+                <img id='img--scott' src={MyImage} 
+                     alt='Scott Lurowist'
+                     className='rounded-circle' />
               </div>
               <div>
                 <div>
@@ -53,10 +52,10 @@ function App() {
             <div className='collapse__container'>
               <div className='collapse__container--top-row'>
                 <Nav className="ml-auto">
-                  <Nav.Link href="#home">HOME</Nav.Link>
-                  <Nav.Link href="#skills-buffer">SKILLS</Nav.Link>
-                  <Nav.Link href="#portfolio-buffer">PORTFOLIO</Nav.Link>
-                  <Nav.Link href="#about-me-buffer">ABOUT</Nav.Link>
+                  <Nav.Link href="#container-introduction">HOME</Nav.Link>
+                  <Nav.Link href="#container-skills">SKILLS</Nav.Link>
+                  <Nav.Link href="#container-projects">PORTFOLIO</Nav.Link>
+                  <Nav.Link href="#container-about-me">ABOUT</Nav.Link>
                 </Nav>
               </div>
               <div className='collapse__container--bottom-row'>

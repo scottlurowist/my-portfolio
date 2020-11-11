@@ -21,21 +21,27 @@ a {
   text-decoration: none;
 }
 
-// Fix the header so that all content scrolls underneath it but it
-// stays in place.
+p {
+  margin: 0;
+}
+
+// Fix the header so that all content scrolls underneath it but the
+// header stays in place.
 header {
-  height: 12vh;
+  height: $headerHeight;
   left: 0;
   overflow: visible;
-  position: fixed;
+  position: sticky;
   top: 0;
   width:100%;
 }
 
+// 'Scott Lurowist' in the nav bar.
 #header-my-name {
   font-family: 'myriadProBold';
 }
 
+// This styles the navbar as a whole.
 .navbar-container {
   a {
     // The reluctant use of !important it to override React Bootstrap's 
@@ -43,6 +49,7 @@ header {
     color: map-get($map: $colors, $key: orangeColor) !important;
     font-family: 'myriadProSemiBold';
   }
+  // Draw a yellow border lower in the navbar as directed by Paul.
   border-bottom: 0.4rem solid map-get($map: $colors, $key: yellowColor);
 }
 
@@ -52,58 +59,42 @@ header {
   align-items: center;
   display: flex;
   flex-direction: row;
+  img {
+    height: 50px;
+    width: 50px;
+  }
   justify-content: flex-start;
+  padding: 0 0 0 1.50rem;
 }
 
 // My image of course.
-#img-scott {
+#img--scott {
   border: 2px solid white;
+  scroll-margin-top: $scrollHeaderHeight;
 }
 
-// This styles the collapsible portion of our navbar.
+// This styles the collapsible portion (Hamburfer icon) of our navbar.
 .collapse__container {
   align-items: flex-end;  
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 1.75rem 1.25rem 0;
   width: 100%;
 }
 
-// This is the container in which the typing text is typed.
-.container__typing-text {
+.section--portfolio-introduction {
   font-size: 1.5rem;
-  margin: 3rem auto 2rem auto;
-  width:90%;
-
-  @media only screen and (min-width: 410px) {
-    margin: 3rem 15% 2rem auto;
-    width: 50%;
-  }
+  margin: 1rem auto;
+  scroll-margin-top: $scrollHeaderHeight;
+  text-align: center;
+  width: 60%;
 }
 
-// Empty space that is the same height of the navbar. This exists so that 
-// content won't sit underneath our fixed navbar when the page is scrolled
-// to the top.
-.header__buffer {
-  // The height of our navbar buffer. This prevents the topmost content of the
-  // page from sitting underneath the fixed navbar which is removed from the
-  // document flow. 
-  height: 18vh;
-
-  // This is the breakpoint at which the hamburger icon stops tucking underneath
-  // my image. So we don't need such a tall buffer because the navbar is not
-  // so tall.
-  @media only screen and (min-width: 373px) {
-    height: 12vh;
-  }  
-}
-
-.section-title {
-  font-family: 'myriadProSemiBold';
-}
-
-.container-skills-projects {
-  border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
+// This styles the other 3 major portions of the portfolio app;
+// the skills, portfolio, and about me section.
+.section--portfolio {
+  border-top: 0.1rem solid map-get($map: $colors, $key: yellowColor);
   color: map-get($map: $colors, $key: orangeColor);
   font-size: 1.40rem;
   margin: 0 auto;
@@ -111,9 +102,22 @@ header {
     color: white;
     text-align: center;
   }
-  padding-top: 3.25rem;
+  padding: 2rem;
+  scroll-margin-top: $scrollHeaderHeight;
   text-align: center;
-  width:80%;
+  width:70%;  
+}
+
+.section--portfolio-about-me {
+  @extend .section--portfolio;
+
+  p {
+    text-align: left;
+  }
+}
+
+.section-title {
+  font-family: 'myriadProSemiBold';
 }
 
 .container-skills {
@@ -151,19 +155,17 @@ header {
   width: 180px;
 }
 
-
-
 .container-projects {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  p:nth-child(1n+1) {
+  p {
     font-size: 1.25rem;
   }
   p:first-child {
-    font-size: 1.50rem;
+    font-size: 1.40rem;
   }
 }
 
@@ -176,30 +178,19 @@ header {
     }
     text-decoration: none;
   }
-  margin: 2rem;
+  margin: 1.5rem;
   text-decoration: none;
   span {
     color: white;
     font-size: 1rem;
     margin-right: 1rem;
   }
-  width: 75%;
-
-  @media only screen and (min-width: 500px) {
-    width: 28%;
-  }  
+  width: 60%;
 }
 
-.container-about-me {
-  border-top: 0.2rem solid map-get($map: $colors, $key: yellowColor);
-  color: map-get($map: $colors, $key: orangeColor);
-  margin: 0 auto;
-  p {
-    color: white;
-    font-size: 1.2rem;
-    text-align: left;
-  }
-  padding-top: 3.25rem;
-  text-align: center;
-  width: 80%;
+#footer__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 2rem 2rem 0;
 }
