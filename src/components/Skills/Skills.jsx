@@ -32,9 +32,9 @@ class Skills extends React.Component {
                 <div>
                     <h4 className='section-title'>SKILLS</h4>
                     <p>I am experienced with and a continual student of some
-                    of the following technologies:
+                       of the following technologies:
                     </p>
-                    <div className='container-skills'>
+                    <div className='section--skills'>
                         <div>
                             <img src={Html5Image} alt='skill'
                                  className='skill-card' />
@@ -55,14 +55,16 @@ class Skills extends React.Component {
                             <img src={ReactJsImage} alt='skill'
                                     className='skill-card' />
                         </div>
+                    </div>    
+                    <div className='section--skills'>    
                         <div>
-                        <img src={NodeJsImage} alt='skill'
-                                 className='skill-card-nodejs' />
+                            <img src={NodeJsImage} alt='skill'
+                                    className='skill-card-nodejs' />
                         </div>
                         <div>
                             <img src={MongoDbImage} alt='skill'
                                  className='skill-card-mongodb' />
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </Fragment>
