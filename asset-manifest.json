@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7c3d105.chunk.css",
-    "main.js": "/static/js/main.8d868899.chunk.js",
-    "main.js.map": "/static/js/main.8d868899.chunk.js.map",
+    "main.css": "/static/css/main.8931e4f1.chunk.css",
+    "main.js": "/static/js/main.8e82758d.chunk.js",
+    "main.js.map": "/static/js/main.8e82758d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
     "static/js/2.fe60d9e0.chunk.js": "/static/js/2.fe60d9e0.chunk.js",
     "static/js/2.fe60d9e0.chunk.js.map": "/static/js/2.fe60d9e0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7f59a5d50e20d8b40c300933fb85057d.js": "/precache-manifest.7f59a5d50e20d8b40c300933fb85057d.js",
+    "precache-manifest.91e2da76c216e525c8355607ead03cc4.js": "/precache-manifest.91e2da76c216e525c8355607ead03cc4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e7c3d105.chunk.css.map": "/static/css/main.e7c3d105.chunk.css.map",
+    "static/css/main.8931e4f1.chunk.css.map": "/static/css/main.8931e4f1.chunk.css.map",
     "static/js/2.fe60d9e0.chunk.js.LICENSE.txt": "/static/js/2.fe60d9e0.chunk.js.LICENSE.txt",
     "static/media/Instasham_01.png": "/static/media/Instasham_01.e0f74915.png",
     "static/media/index.scss": "/static/media/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.463ca8a0.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
     "static/js/2.fe60d9e0.chunk.js",
-    "static/css/main.e7c3d105.chunk.css",
-    "static/js/main.8d868899.chunk.js"
+    "static/css/main.8931e4f1.chunk.css",
+    "static/js/main.8e82758d.chunk.js"
   ]
 }
