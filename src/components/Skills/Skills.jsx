@@ -14,6 +14,7 @@ import Css3Image from '../../images/css3.png';
 import SassImage from '../../images/Sass-01.54d4c686.png';
 import JavaSriptImage from '../../images/Mmww2.png';
 import ReactJsImage from '../../images/react-logo-png-transparent.png';
+import CSharpImage from '../../images/th.jpeg';
 import NodeJsImage from '../../images/nodejs-logo.png';
 import MongoDbImage from '../../images/mongodb-logo.png';
 
@@ -53,6 +54,10 @@ class Skills extends React.Component {
                         </div>
                         <div>
                             <img src={ReactJsImage} alt='skill'
+                                    className='skill-card' />
+                        </div>
+                        <div>
+                            <img src={CSharpImage} alt='skill'
                                     className='skill-card' />
                         </div>
                     </div>    
