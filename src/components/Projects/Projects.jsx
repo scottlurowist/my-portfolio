@@ -11,6 +11,7 @@ import React, { Fragment } from 'react';
 
 import Project from '../Project/Project';
 
+import PortfolioImage from '../../images/Portfolio-Transparent-Background.png';
 import RussianFlashcardsImage from '../../images/RussianFlashCard_01.png';
 import InstashamImage from '../../images/Instasham_01.png';
 import TicTacToeImage from '../../images/TicTacToe_Ani_01.gif';
@@ -35,6 +36,13 @@ class Projects extends React.Component {
                     <h4 className='section-title'>PORTFOLIO</h4>
                     <p>Some of my work... </p>
                     <div className='container-projects'>
+                        <Project imageUrl={PortfolioImage}
+                                 altText='My Portfolio'
+                                 projectTitle='MY PORTFOLIO'
+                                 projectSummary='The portfolio that you are currently viewing.' 
+                                 techStack='React.js,React Bootstrap, SCSS.'
+                                 gitHubUrl='https://github.com/scottlurowist/my-portfolio'
+                                 applicationUrl='https://scottlurowist.com/#/' />
                         <Project imageUrl={RussianFlashcardsImage}
                                  altText='Russian Flashcards'
                                  projectTitle='RUSSIAN FLASHCARDS'
