@@ -31,7 +31,7 @@ class Skills extends React.Component {
         return (
             <Fragment>
                 <div>
-                    <h4 className='section-title'>SKILLS</h4>
+                    <h3 className='section-title'>SKILLS</h3>
                     <p>I am experienced with and a continual student of some
                        of the following technologies:
                     </p>

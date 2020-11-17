@@ -33,7 +33,7 @@ class Projects extends React.Component {
         return(
             <Fragment>
                 <div>
-                    <h4 className='section-title'>PORTFOLIO</h4>
+                    <h3 className='section-title'>PORTFOLIO</h3>
                     <p>Some of my work... </p>
                     <div className='container-projects'>
                         <Project imageUrl={PortfolioImage}
