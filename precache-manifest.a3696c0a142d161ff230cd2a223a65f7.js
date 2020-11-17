@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd707cf02533978d2152e3cc2ffb5930",
+    "revision": "b398c8d107308b64b282cf2cb8b8d6e6",
     "url": "/index.html"
   },
   {
-    "revision": "98cac5df54923ce0e024",
+    "revision": "d3649012d47ff2d9ec1f",
     "url": "/static/css/main.c3cdfeec.chunk.css"
   },
   {
-    "revision": "30446187754c515dc502",
-    "url": "/static/js/2.9e6682fa.chunk.js"
+    "revision": "2bcbc05dd044dd5d889b",
+    "url": "/static/js/2.f688069a.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/static/js/2.9e6682fa.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f688069a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98cac5df54923ce0e024",
-    "url": "/static/js/main.d30cee98.chunk.js"
+    "revision": "d3649012d47ff2d9ec1f",
+    "url": "/static/js/main.767050b5.chunk.js"
   },
   {
     "revision": "efe25b4b8d1f7af9da4b",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86bb1295004f3fbe40abef46553807f5",
     "url": "/static/media/MYRIADPRO-SEMIBOLD.86bb1295.OTF"
+  },
+  {
+    "revision": "1c60028b113db32a202e54b59a78f564",
+    "url": "/static/media/Portfolio-Transparent-Background.1c60028b.png"
   },
   {
     "revision": "017134767bed6b32e6d95b24c7116725",
