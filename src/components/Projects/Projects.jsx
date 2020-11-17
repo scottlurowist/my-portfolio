@@ -12,6 +12,7 @@ import React, { Fragment } from 'react';
 import Project from '../Project/Project';
 
 import PortfolioImage from '../../images/Portfolio-Transparent-Background.png';
+import TestPrepImage from '../../images/exam-clipart-6.jpg'
 import RussianFlashcardsImage from '../../images/RussianFlashCard_01.png';
 import InstashamImage from '../../images/Instasham_01.png';
 import TicTacToeImage from '../../images/TicTacToe_Ani_01.gif';
@@ -43,6 +44,14 @@ class Projects extends React.Component {
                                  techStack='React.js,React Bootstrap, SCSS.'
                                  gitHubUrl='https://github.com/scottlurowist/my-portfolio'
                                  applicationUrl='https://scottlurowist.com/#/' />
+                        <Project imageUrl={TestPrepImage}
+                                 altText='Test Prep'
+                                 projectTitle='TEST PREP'
+                                 projectSummary='A web app for creating tests on any topic.' 
+                                 techStack='React.js,React Bootstrap, SCSS, Axios, Express.js, Node.js,
+                                            Mongoose.js, MongoDB'
+                                 gitHubUrl='https://github.com/scottlurowist/testprep-frontend'
+                                 applicationUrl='https://scottlurowist.github.io/testprep-frontend/#/' />                                 
                         <Project imageUrl={RussianFlashcardsImage}
                                  altText='Russian Flashcards'
                                  projectTitle='RUSSIAN FLASHCARDS'
