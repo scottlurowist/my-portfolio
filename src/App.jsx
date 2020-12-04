@@ -18,6 +18,7 @@ import PortfolioView from './views/PortfolioView';
 import MyImage from './images/Scott_02.jpg';
 import GitHubImage from './images/GitHub-Mark-Light-64px.png';
 import LinkedInImage from './images/LI-In-Bug.png'
+import MediumImage from './images/IdJV4Pog.png';
 
 import './App.scss';
 
@@ -71,7 +72,13 @@ function App() {
                 </a>
                 <a href='https://www.linkedin.com/in/slurowistnynet'
                    target='_blank' rel='noopener noreferrer' >
-                  <img src={LinkedInImage} alt='LinkedIn' height='32' width='37.8' />
+                  <img src={LinkedInImage} alt='LinkedIn' height='32' width='37.8'
+                       className='mr-3' />
+                </a>
+                <a href='https://scottlurowist.medium.com/'
+                   target='_blank' rel='noopener noreferrer' >
+                  <img src={MediumImage} alt='LinkedIn' height='32' width='32'
+                       className='mr-3' />
                 </a>
               </div>
             </div>

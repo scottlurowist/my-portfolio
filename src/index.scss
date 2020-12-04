@@ -28,6 +28,9 @@
   src: url('./fonts/myriad-pro/MYRIADPRO-REGULAR.OTF');
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
