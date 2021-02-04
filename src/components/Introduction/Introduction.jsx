@@ -26,8 +26,7 @@ class Home extends React.Component {
         this.thirdTextParagraphToType = "I am a ";
         this.fourthTextParagraphToType = 'Welcome to my portfolio. ';
         this.rolesToFlash =
-            ['software developer.', 'computer scientist.', 'full stack developer.'];
-        // this.textToFlash= ['&nbsp;', '_']; 
+            ['software engineer.', 'computer scientist.'];
         this.firstTimer = null;
         this.secondTimer = null;
         this.thirdTimer = null;
@@ -96,13 +95,10 @@ class Home extends React.Component {
     };
 
 
-
-
     render() {
         return <Fragment>
                 <section className="container__typing-text">
                     <p className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
                         <TypingText id='typing-text-1st-paragraph'
                                     textToRender={this.firstTextParagraphToType}
                                     renderSpeed={100}
@@ -112,7 +108,6 @@ class Home extends React.Component {
                                         {this.typingTextFirstParagraphFinishedCallback} />
                     </p >
                     <p className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
                         <TypingText id='typing-text-2nd-paragraph'
                                     textToRender={this.secondTextParagraphToType}
                                     renderSpeed={100}
@@ -122,7 +117,6 @@ class Home extends React.Component {
                                         {this.typingTextSecondParagraphFinishedCallback} />
                     </p >    
                     <p className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
                         <TypingText id='typing-text-3rd-paragraph'
                                     textToRender={this.thirdTextParagraphToType}
                                     renderSpeed={100}
@@ -130,7 +124,6 @@ class Home extends React.Component {
                                     suppressTyping={false}
                                     finishedCallback=
                                         {this.typingTextThirdParagraphFinishedCallback} />
-                        {/* <audio src={TypingAudio} ></audio> */}
                         <FlashingText wordsToRender={this.rolesToFlash}
                                         renderSpeed={2000}
                                         repeatCycle={ false }
@@ -140,7 +133,6 @@ class Home extends React.Component {
                                             { this.rolesFlashingFinishedCallback } />                                    
                     </p >                
                     <p className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
                         <TypingText id='typing-text-4th-paragraph'
                                     textToRender={this.fourthTextParagraphToType}
                                     renderSpeed={100}
@@ -148,13 +140,6 @@ class Home extends React.Component {
                                     suppressTyping={false}
                                     finishedCallback=
                                         {this.typingTextFourthParagraphFinishedCallback} />
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        {/* <FlashingText wordsToRender={this.textToFlash}
-                                        renderSpeed={1000}
-                                        repeatCycle={ true }
-                                        startFlashing={ this.state.finalCharactersAreTyping }
-                                        suppressTyping={ false }
-                                        finishedCallback= { null } />                                     */}
                     </p >    
                 </section>
         </Fragment>

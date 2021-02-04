@@ -43,7 +43,7 @@ function App() {
                   <span id='header-my-name' className='ml-3 text-light'>SCOTT LUROWIST</span>   
                 </div>
                 <div>
-                  <span className='ml-3 text-secondary'>Fullstack Developer</span>   
+                  <span className='ml-3 text-secondary'>Software Engineer</span>   
                 </div>   
               </div>     
             </div>
@@ -91,8 +91,6 @@ function App() {
     </Fragment>
   );
 }
-
-
 
 
 export default App;
