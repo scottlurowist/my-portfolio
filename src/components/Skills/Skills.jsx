@@ -17,6 +17,7 @@ import ReactJsImage from '../../images/react-logo-png-transparent.png';
 import CSharpImage from '../../images/th.jpeg';
 import NodeJsImage from '../../images/nodejs-logo.png';
 import MongoDbImage from '../../images/mongodb-logo.png';
+import TypeScriptImage from '../../images/240px-Typescript_logo_2020.svg.png';
 
 
 
@@ -50,6 +51,10 @@ class Skills extends React.Component {
                         </div>
                         <div>
                             <img src={JavaSriptImage} alt='skill'
+                                    className='skill-card-javascript' />
+                        </div>
+                        <div>
+                            <img src={TypeScriptImage} alt='skill'
                                     className='skill-card-javascript' />
                         </div>
                         <div>
