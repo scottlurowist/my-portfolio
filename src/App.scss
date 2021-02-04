@@ -21,37 +21,177 @@ a {
   text-decoration: none;
 }
 
-// Fix this. This file should not know about navbar styling.
+p {
+  margin: 0;
+}
+
+// Fix the header so that all content scrolls underneath it but the
+// header stays in place.
+header {
+  height: $headerHeight;
+  left: 0;
+  overflow: visible;
+  position: sticky;
+  top: 0;
+  width:100%;
+}
+
+// 'Scott Lurowist' in the nav bar.
+#header-my-name {
+  font-family: 'myriadProBold';
+}
+
+// This styles the navbar as a whole.
 .navbar-container {
-  overflow: hidden;
-  position: fixed;
+  a {
+    // The reluctant use of !important it to override React Bootstrap's 
+    // styling of the links, which I currently don't understand.
+    color: map-get($map: $colors, $key: orangeColor) !important;
+    font-family: 'myriadProSemiBold';
+  }
+  // Draw a yellow border lower in the navbar as directed by Paul.
+  border-bottom: 0.4rem solid map-get($map: $colors, $key: yellowColor);
+}
+
+
+// This styles the "brand" portion of the navbar.
+.brand__container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  justify-content: flex-start;
+  padding: 0 0 0 1.50rem;
+}
+
+// My image of course.
+#img--scott {
+  border: 2px solid white;
+  scroll-margin-top: $scrollHeaderHeight;
+}
+
+// This styles the collapsible portion (Hamburfer icon) of our navbar.
+.collapse__container {
+  align-items: flex-end;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1.75rem 1.25rem 0;
   width: 100%;
 }
 
-a {
-  color: map-get($map: $colors, $key: orangeColor) !important;
-  text-decoration: none;
+.section--portfolio-introduction {
+  font-size: 1.75rem;
+  margin: 2rem auto;
+  scroll-margin-top: $scrollHeaderHeight;
+  text-align: center;
+  width: 60%;
 }
 
-.brand__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  
-  img {
-    border: 2px solid white;
+// This styles the other 3 major portions of the portfolio app;
+// the skills, portfolio, and about me section.
+.section--portfolio {
+  border-top: 0.1rem solid map-get($map: $colors, $key: yellowColor);
+  color: map-get($map: $colors, $key: orangeColor);
+  font-size: 1.40rem;
+  margin: 0 auto;
+  p {
+    color: white;
+    text-align: center;
+  }
+  padding: 2rem;
+  scroll-margin-top: $scrollHeaderHeight;
+  text-align: center;
+  width:70%;  
+}
+
+.section--portfolio-about-me {
+  @extend .section--portfolio;
+
+  p {
+    font-size: 1.25rem;
+    text-align: left;
   }
 }
 
-.collapse__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.section-title {
+  font-family: 'myriadProSemiBold';
 }
 
-.typing-text {
-  margin: 0 auto;
+.section--skills {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: whitesmoke;
+  display: inline-block;
+  border: #2a2a2a solid 0px;
+  border-radius: 0.75rem;
+  margin: 1.5rem;
+  padding: 0.25rem;
+  width: 90px;
+  height: 90px;
+}
+
+.skill-card-javascript {
+  @extend .skill-card;    
+  padding: 0px;
+}
+
+.skill-card-nodejs {
+  @extend .skill-card;    
+  width: 135px;
+}
+
+.skill-card-mongodb {
+  @extend .skill-card;    
+  background-color: white;
+  width: 180px;
+}
+
+.container-projects {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  p {
+    font-size: 1.25rem;
+  }
+  p:first-child {
+    font-size: 1.40rem;
+  }
+}
+
+.project {
+  a {
+    color: map-get($map: $colors, $key: orangeColor);
+    font-size: 1rem;
+    &:hover {
+      text-decoration: none;
+    }
+    text-decoration: none;
+  }
+  margin: 1.5rem;
+  text-decoration: none;
+  span {
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
   width: 60%;
+}
+
+#footer__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 2rem 2rem 0;
 }

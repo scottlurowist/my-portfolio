@@ -7,163 +7,89 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import FlashingText from '../components/FlashingText/FlashingText';
-import TypingText from './../components/typing-text/TypingText';
+import Introduction from '../components/Introduction/Introduction';
+import Skills from '../components/Skills/Skills';
+import Projects from '../components/Projects/Projects';
+import AboutMe from './../components/AboutMe/AboutMe';
 
-import TypingAudio from './Keyboard-Typing-03-c-FesliyanStudios.com.mp3';
+import UpArrowImage from '../images/white-up-arrow-png-10-transparent.png';
 
 
 
 
+// This component renders the entire view for the portfolio.
+//
 class PortfolioView extends React.Component {
 
     constructor() {
         super();
 
-        this.typingIsFinishedCallback = null;
-        this.firstTextParagraphToType = 'Hello.';
-        this.secondTextParagraphToType = 'My name is Scott Lurowist.';
-        this.thirdTextParagraphToType = "I am a ";
-        this.fourthTextParagraphToType = 'Welcome to my site';
-        this.rolesToFlash = ['Garbage Plate connosieur', 'petomane', 'full stack developer'];
-        this.textToFlash= ['', '_']; 
-        this.firstTimer = null;
-        this.secondTimer = null;
-        this.thirdTimer = null;
-        this.fourthTimer = null;
-        this.fifthTimer = null;
+        this.timer = null;
 
+        // Set to 'none' so that the rest of the site does not appear until
+        // the typing text is finished.
         this.state = {
-            // False until the typing text intro is rendered, and then set
-            // to true.
-            firstTextIsTyping: true,
-            secondTextIsTyping: false,
-            thirdTextIsTyping: false,
-            fourthTextIsTyping: false,
-            rolesToFlashIsFlashing: false,
-            finalCharactersAreTyping: false,
-            suppressTyping: false
+            displaySite: 'none'
         };
     }
 
 
-    typingTextFirstParagraphFinishedCallback = () => {
-        this.firstTimer = setTimeout(() => {
-            this.setState({ secondTextIsTyping: true });
-        }, 1000);
+    // A callback that is invoked when the typing text is finished. It makes
+    // the rest of the site appear.
+    //
+    introductionHasFinishedRendering = () => {
+        this.timer = setTimeout(() => {
+            this.setState({ displaySite: 'block' });
+        }, 2750);
     };
 
 
-    typingTextSecondParagraphFinishedCallback = () => {
-        this.secondTimer = setTimeout(() => {
-            this.setState({ thirdTextIsTyping: true });
-        }, 1000);
-    };
-
-
-    typingTextThirdParagraphFinishedCallback = () => {
-        this.thirdTimer = setTimeout(() => {
-            this.setState({ rolesToFlashIsFlashing: true });
-        }, 50);
-
-        this.fourthTimer = setTimeout(() => {
-            this.setState({ fourthTextIsTyping: true });
-        }, 6000);
-
-        this.fifthTimer = setTimeout(() => {
-            this.setState({ finalCharactersAreTyping: true });
-        }, 6500);
-    };
-
-
-
-
-
-    // typingTextFourthParagraphFinishedCallback = () => {
-    //     this.fourth = setTimeout(() => {
-    //         this.setState({ rolesToFlashIsFlashing: true });
-    //     }, 50);
-
-    //     this.fourthTimer = setTimeout(() => {
-    //         this.setState({ fourthTextParagraphToType: true });
-    //     }, 2000);
-    // };
-
-
+    // A React.js lifecycle method that is invoked before after a
+    // component is unmounted (removed from the DOM). 
+    //
     componentWillUnmount() {
-        this.setState({ suppressTyping: true });
-        clearTimeout(this.firstTimer);
-        clearTimeout(this.secondTimer);
-        clearTimeout(this.thirdTimer);
-        clearTimeout(this.fourthTimer);
-    };
+        clearTimeout(this.timer);
+    }
 
 
+    // A React.js lifecyle method that is invoked whenever state and/or props
+    // change and renders the component.
+    //
     render() {
         return (
-            <div className="">
-                <div>
-                    <h2 className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <TypingText id='typing-text-1st-paragraph'
-                                    textToRender={this.firstTextParagraphToType}
-                                    renderSpeed={100}
-                                    startTyping={this.state.firstTextIsTyping}
-                                    suppressTyping={false}
-                                    finishedCallback={this.typingTextFirstParagraphFinishedCallback} />
-                    </h2 >
-                    <h2 className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <TypingText id='typing-text-2nd-paragraph'
-                                    textToRender={this.secondTextParagraphToType}
-                                    renderSpeed={100}
-                                    startTyping={this.state.secondTextIsTyping}
-                                    suppressTyping={false}
-                                    finishedCallback={this.typingTextSecondParagraphFinishedCallback} />
-                    </h2 >    
-                    <h2 className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <TypingText id='typing-text-3rd-paragraph'
-                                    textToRender={this.thirdTextParagraphToType}
-                                    renderSpeed={100}
-                                    startTyping={this.state.thirdTextIsTyping}
-                                    suppressTyping={false}
-                                    finishedCallback= {this.typingTextThirdParagraphFinishedCallback} />
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <FlashingText wordsToRender={this.rolesToFlash}
-                                      renderSpeed={1500}
-                                      startFlashing={ this.state.rolesToFlashIsFlashing }
-                                      suppressTyping={ false }
-                                      finishedCallback= { null } />                                    
-                    </h2 >                
-                    <h2 className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <TypingText id='typing-text-4th-paragraph'
-                                    textToRender={this.fourthTextParagraphToType}
-                                    renderSpeed={100}
-                                    startTyping={this.state.fourthTextIsTyping}
-                                    suppressTyping={false}
-                                    finishedCallback= {null} />
-                        {/* <audio src={TypingAudio} ></audio> */}
-                        <FlashingText wordsToRender={this.textToFlash}
-                                      renderSpeed={1000}
-                                      startFlashing={ this.state.finalCharactersAreTyping }
-                                      suppressTyping={ false }
-                                      finishedCallback= { null } />                                    
-                    </h2 >    
-                    <h2 className='typing-text'>
-                        {/* <audio src={TypingAudio} ></audio> */}
-
-                    </h2 >                    
-                    <hr />
-                </div>
-            </div>
+            <Fragment>
+                <section id='container-introduction' className='section--portfolio-introduction'>
+                    <Introduction className='portfolio-container'
+                                  introductionIsFinishedCallback={this.introductionHasFinishedRendering} />
+                </section>
+                <section id='container-skills' className='section--portfolio'
+                         style={{display: this.state.displaySite}}>
+                    <Skills />                    
+                </section>
+                <section id='container-projects' className='section--portfolio'
+                         style={{display: this.state.displaySite}}>
+                    <Projects />             
+                </section>                
+                <section id='container-about-me' className='section--portfolio-about-me'
+                         style={{display: this.state.displaySite}}>
+                    <AboutMe />             
+                </section>
+                <footer>
+                    <div id='footer__div'>
+                        <div>
+                            <a href='#container-introduction'>
+                                <img src={UpArrowImage} alt='home' height='60' weight='60'
+                                    style={{display: this.state.displaySite}} />
+                            </a> 
+                        </div>
+                    </div>
+                </footer>
+            </Fragment>
         );
     }
 }
-
 
 
 export default PortfolioView;

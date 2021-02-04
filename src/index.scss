@@ -13,15 +13,35 @@
 
 
 
+@font-face {
+  font-family: myriadProBold;
+  src: url('./fonts/myriad-pro/MYRIADPRO-BOLD.OTF');
+}
+
+@font-face {
+  font-family: myriadProSemiBold;
+  src: url('./fonts/myriad-pro/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+@font-face {
+  font-family: myriadProRegular;
+  src: url('./fonts/myriad-pro/MYRIADPRO-REGULAR.OTF');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: map-get($map: $colors, $key: bground );
+  background-image: url('./images/chase-jiggliemon-wilson-6qykGgVtUrM-unsplash.jpg');
+  background-size: cover;
   color: map-get($map: $colors, $key: font );
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'myriadProRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
                'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;

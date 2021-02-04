@@ -15,7 +15,8 @@ $colors: (bground: #2c2c2c,
 
 // Override Bootstrap here before importing Bootstrap.
 $theme-colors: (
-  "dark":black,
+  "dark": rgba(0, 0, 0, 0.8),
+  "secondary": #8c8c8c
 );
 
 
@@ -33,11 +34,6 @@ $colors: (bground: #2c2c2c,
           yellowColor: #FDB913,
           grayColor: #8c8c8c);
 
-// Also defined by Paul.          
-// Main font: Myriad Pro (for your name I just set it to Bold)
-// Ruskie Flashcard Font: BalboaPlus
-// Instasham Font: Hucklebuck JF
-
-// Use this font family anywhere handwritten fonts are used.          
-$handwritten-font-family: 'Kalam', cursive; 
-
+// The height of our header.        
+$headerHeight: 20vh;
+$scrollHeaderHeight: 22vh;
