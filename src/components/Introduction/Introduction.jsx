@@ -26,7 +26,7 @@ class Home extends React.Component {
         this.thirdTextParagraphToType = "I am a ";
         this.fourthTextParagraphToType = 'Welcome to my portfolio. ';
         this.rolesToFlash =
-            ['software engineer.', 'computer scientist.'];
+            ['software engineer.'];
         this.firstTimer = null;
         this.secondTimer = null;
         this.thirdTimer = null;
@@ -34,8 +34,8 @@ class Home extends React.Component {
         this.fifthTimer = null;
         this.sixthTimer = null;       
         
-        this.typingTextRenderSpeedInMillisconds = 50;
-        this.flashingTextRenderSpeedInMilliseconds = 1000;
+        this.typingTextRenderSpeedInMillisconds = 15;
+        this.flashingTextRenderSpeedInMilliseconds = 250;
 
         this.state = {
             firstTextIsTyping: true,

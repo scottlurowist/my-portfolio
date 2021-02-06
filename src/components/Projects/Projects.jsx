@@ -41,7 +41,7 @@ class Projects extends React.Component {
                                  altText='My Portfolio'
                                  projectTitle='MY PORTFOLIO'
                                  projectSummary='The portfolio that you are currently viewing.' 
-                                 techStack='React.js,React Bootstrap, SCSS.'
+                                 techStack='React.js with Typescript, React Bootstrap, SCSS.'
                                  gitHubUrl='https://github.com/scottlurowist/my-portfolio'
                                  applicationUrl='https://scottlurowist.com/#/' />
                         <Project imageUrl={TestPrepImage}
