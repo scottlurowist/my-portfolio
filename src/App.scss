@@ -49,6 +49,7 @@ header {
     color: map-get($map: $colors, $key: orangeColor) !important;
     font-family: 'myriadProSemiBold';
   }
+
   // Draw a yellow border lower in the navbar as directed by Paul.
   border-bottom: 0.4rem solid map-get($map: $colors, $key: yellowColor);
 }
@@ -73,7 +74,7 @@ header {
   scroll-margin-top: $scrollHeaderHeight;
 }
 
-// This styles the collapsible portion (Hamburfer icon) of our navbar.
+// This styles the collapsible portion (Hambugfer icon) of our navbar.
 .collapse__container {
   align-items: flex-end;  
   display: flex;
@@ -81,6 +82,9 @@ header {
   justify-content: center;
   margin: 0 1.75rem 1.25rem 0;
   width: 100%;
+  &--bottom-row img:hover {
+    transform: scale($scaleFactor, $scaleFactor);
+  }
 }
 
 .section--portfolio-introduction {
