@@ -7,11 +7,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// Sets the background, font, and navbar colors.
-$colors: (bground: #2c2c2c, 
-          font: whitesmoke,
-          navbar: black);
-
 
 // Override Bootstrap here before importing Bootstrap.
 $theme-colors: (
@@ -37,3 +32,6 @@ $colors: (bground: #2c2c2c,
 // The height of our header.        
 $headerHeight: 20vh;
 $scrollHeaderHeight: 22vh;
+
+// The scaling (Zoom) factor of the LinkedIn, GitHub, and Medium icons.
+$scaleFactor: 1.15;
