@@ -32,7 +32,10 @@ class Home extends React.Component {
         this.thirdTimer = null;
         this.fourthTimer = null;
         this.fifthTimer = null;
-        this.sixthTimer = null;        
+        this.sixthTimer = null;       
+        
+        this.typingTextRenderSpeedInMillisconds = 50;
+        this.flashingTextRenderSpeedInMilliseconds = 1000;
 
         this.state = {
             firstTextIsTyping: true,
@@ -101,7 +104,7 @@ class Home extends React.Component {
                     <p className='typing-text'>
                         <TypingText id='typing-text-1st-paragraph'
                                     textToRender={this.firstTextParagraphToType}
-                                    renderSpeed={100}
+                                    renderSpeed={this.typingTextRenderSpeedInMillisconds}
                                     startTyping={this.state.firstTextIsTyping}
                                     suppressTyping={false}
                                     finishedCallback=
@@ -110,7 +113,7 @@ class Home extends React.Component {
                     <p className='typing-text'>
                         <TypingText id='typing-text-2nd-paragraph'
                                     textToRender={this.secondTextParagraphToType}
-                                    renderSpeed={100}
+                                    renderSpeed={this.typingTextRenderSpeedInMillisconds}
                                     startTyping={this.state.secondTextIsTyping}
                                     suppressTyping={false}
                                     finishedCallback=
@@ -119,13 +122,13 @@ class Home extends React.Component {
                     <p className='typing-text'>
                         <TypingText id='typing-text-3rd-paragraph'
                                     textToRender={this.thirdTextParagraphToType}
-                                    renderSpeed={100}
+                                    renderSpeed={this.typingTextRenderSpeedInMillisconds}
                                     startTyping={this.state.thirdTextIsTyping}
                                     suppressTyping={false}
                                     finishedCallback=
                                         {this.typingTextThirdParagraphFinishedCallback} />
                         <FlashingText wordsToRender={this.rolesToFlash}
-                                        renderSpeed={2000}
+                                        renderSpeed={this.flashingTextRenderSpeedInMilliseconds}
                                         repeatCycle={ false }
                                         startFlashing={ this.state.rolesToFlashIsFlashing }
                                         suppressTyping={ false }
@@ -135,7 +138,7 @@ class Home extends React.Component {
                     <p className='typing-text'>
                         <TypingText id='typing-text-4th-paragraph'
                                     textToRender={this.fourthTextParagraphToType}
-                                    renderSpeed={100}
+                                    renderSpeed={this.typingTextRenderSpeedInMillisconds}
                                     startTyping={this.state.fourthTextIsTyping}
                                     suppressTyping={false}
                                     finishedCallback=
