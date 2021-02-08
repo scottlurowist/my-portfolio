@@ -25,8 +25,8 @@ class Home extends React.Component {
         this.secondTextParagraphToType = 'My name is Scott Lurowist.';
         this.thirdTextParagraphToType = "I am a ";
         this.fourthTextParagraphToType = 'Welcome to my portfolio. ';
-        this.rolesToFlash =
-            ['software engineer.'];
+        this.rolesToFlash = ['software engineer.'];
+
         this.firstTimer = null;
         this.secondTimer = null;
         this.thirdTimer = null;
@@ -128,12 +128,12 @@ class Home extends React.Component {
                                     finishedCallback=
                                         {this.typingTextThirdParagraphFinishedCallback} />
                         <FlashingText wordsToRender={this.rolesToFlash}
-                                        renderSpeed={this.flashingTextRenderSpeedInMilliseconds}
-                                        repeatCycle={ false }
-                                        startFlashing={ this.state.rolesToFlashIsFlashing }
-                                        suppressTyping={ false }
-                                        finishedCallback=
-                                            { this.rolesFlashingFinishedCallback } />                                    
+                                      renderSpeedInMilliseconds={this.flashingTextRenderSpeedInMilliseconds}
+                                      repeatCycle={ false }
+                                      startFlashing={ this.state.rolesToFlashIsFlashing }
+                                      suppressTyping={ false }
+                                      finishedCallback=
+                                        { this.rolesFlashingFinishedCallback } />                                    
                     </p >                
                     <p className='typing-text'>
                         <TypingText id='typing-text-4th-paragraph'
