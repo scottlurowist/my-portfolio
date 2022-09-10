@@ -7,12 +7,9 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
 import { useState, useEffect, Fragment } from 'react';
+
 import FlashingTextProps from './FlashingTextProps';
-
-
-
 
 // This component renders an array of strings as words that appear and 
 // disappear into the next word at a set interval.
@@ -32,7 +29,6 @@ const FlashingText = ({ wordsToRender, renderSpeedInMilliseconds,
             clearInterval(flashingTextTimer);
         };
     }, []);
-
 
     const flashText = () => {
         // This prevents recursive triggers that start recursive flashing.
@@ -71,6 +67,5 @@ const FlashingText = ({ wordsToRender, renderSpeedInMilliseconds,
 
     return (<span>{ renderedText }</span>);
 };
-
 
 export default FlashingText;

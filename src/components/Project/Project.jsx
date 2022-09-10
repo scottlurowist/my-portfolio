@@ -6,13 +6,9 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 
 import GitHubImage from '../../images/GitHub-Mark-Light-64px.png';
-
-
-
 
 // This component renders an individual project.
 //
@@ -20,7 +16,6 @@ function Project(props) {
 
     const projectImageHeight = '100';
     const projectImageWidth = '100';
-
 
     return(
         <Fragment>

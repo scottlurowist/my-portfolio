@@ -6,11 +6,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
-import React, { Fragment } from 'react';
-
-
-
+import { Fragment } from 'react';
 
 const AboutMe = () => {
     return (
@@ -63,6 +59,5 @@ const AboutMe = () => {
         </Fragment>
     );
 };
-
 
 export default AboutMe;

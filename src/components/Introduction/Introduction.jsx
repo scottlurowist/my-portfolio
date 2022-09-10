@@ -6,14 +6,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
 import React, { Fragment } from 'react';
 
 import TypingText from '../typing-text/TypingText';
 import FlashingText from '../FlashingText/FlashingText';
-
-
-
 
 class Home extends React.Component {
 
@@ -48,13 +44,11 @@ class Home extends React.Component {
         };
     };
 
-
     typingTextFirstParagraphFinishedCallback = () => {
         this.firstTimer = setTimeout(() => {
             this.setState({ secondTextIsTyping: true });
         }, 1000);
     };
-
 
     typingTextSecondParagraphFinishedCallback = () => {
         this.secondTimer = setTimeout(() => {
@@ -62,13 +56,11 @@ class Home extends React.Component {
         }, 1000);
     };
 
-
     typingTextThirdParagraphFinishedCallback = () => {
         this.thirdTimer = setTimeout(() => {
             this.setState({ rolesToFlashIsFlashing: true });
         }, 50);
     };    
-
 
     rolesFlashingFinishedCallback = () => {
         this.fourthTimer = setTimeout(() => {
@@ -80,12 +72,10 @@ class Home extends React.Component {
         }, 1500);
     };
 
-
     typingTextFourthParagraphFinishedCallback = () => {
         this.setState({ finalCharactersAreTyping: true });
         this.introductionIsFinished();
     };
-
 
     componentWillUnmount() {
         this.setState({ suppressTyping: true });
@@ -96,7 +86,6 @@ class Home extends React.Component {
         clearTimeout(this.fifthTimer);
         clearTimeout(this.sixthTimer);
     };
-
 
     render() {
         return <Fragment>
@@ -148,6 +137,5 @@ class Home extends React.Component {
         </Fragment>
     }
 }
-
 
 export default Home;

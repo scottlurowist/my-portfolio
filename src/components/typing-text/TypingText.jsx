@@ -7,11 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
 import React, { Fragment } from 'react';
-
-
-
 
 // This component renders text as if it were being typed in real time. It takes
 // an input string and renders it at a chose speed as if it were being typed.
@@ -32,7 +28,6 @@ class TypingText extends React.Component {
             renderedText: ''
         };
     };
-
 
     typeText = () => {
         // This prevents recursive triggers that start recursive typing.
@@ -64,19 +59,16 @@ class TypingText extends React.Component {
             
         }, this.renderSpeed);    
     };
-
-        
+       
     componentDidMount() {
         this.mounted = true;
     };
-
 
     componentWillUnmount() {
         clearInterval(this.typingTextTimer);
         this.typingTextTimer = null;
         this.finishedCallback = null;
     };
-
 
     render() {
         // This.props.startTyping will trigger then render method.
@@ -90,6 +82,5 @@ class TypingText extends React.Component {
         return <Fragment>{ this.state.renderedText.toString() }</Fragment>
     };
 };
-
 
 export default TypingText;
