@@ -17,7 +17,7 @@ $theme-colors: (
 
 // Now we can import Bootstrap. This must come after overrides since
 // Boostrap uses !default for defining properties.
-@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 
 // Sets the background, font, and navbar colors.
